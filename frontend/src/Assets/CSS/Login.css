@@ -1,0 +1,64 @@
+.bglogin{
+  width: 100%;
+  height: 100vh;
+}
+
+.column {
+  width: 100%;
+  background-color: #D8E9A8;
+  
+}
+
+.Login{
+  width: 100%;
+  height: 100vh;
+  color: #4d9f3d;
+  display: flex;
+  justify-content: center;
+}
+
+.logonama{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+img{
+  width: 50px;
+  height: 50px;
+}
+
+.isi input, .isi button{
+  width: 70%;
+  height: 30px;
+  border-radius: 5px;
+  border: 0;
+}
+
+.isi{
+  margin: auto;
+  width: 50%;
+  /* height: 40%; */
+  line-height: 8vh;
+  border-radius: 8px;
+  background-color: #4d9f3d77;
+  justify-content: center;
+  text-align: center;
+}
+
+.btnlogin{
+  width: 70%;
+  height: 30px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #4d9f3d8a;
+  color: white;
+  font-weight: 150;
+}
+
+.btnlogin:hover {
+  background-color: white;
+  color: #4E9F3D;
+  border: 3px solid #4E9F3D;
+  transition: 0.3s;
+}

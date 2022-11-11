@@ -1,0 +1,19 @@
+.Label {
+	height: 20vh;
+	background-color: #386641;
+	transform: translateY(-4px);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.Label h2 {
+	color: #A7C957;
+}
+
+.PlantLabel {
+	width: 40vh;
+	height: 40vh;
+	margin-bottom: 11.4%;
+}

@@ -1,0 +1,25 @@
+.Footer {
+	height: 60vh;
+	margin-top: 10%;
+}
+
+.Footer-Layer1  {
+	height: 80%;
+	background-color: #386641;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Footer-Layer2 {
+	height: 20%;
+	background-color: #A7C957;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Footer-Layer2 p {
+	color: #386641;
+	font-weight: bold;
+}

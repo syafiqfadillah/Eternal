@@ -1,0 +1,57 @@
+.Navbar {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.Navbar-Layer1 {
+	width: 55%;
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Navbar-Layer2 {
+	width: 35%;
+	height: 35px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding-right: 5%;
+}
+
+.Navbar-Eternal {
+	width: 200px;
+}
+
+.Navbar-Search {
+	width: 24px;
+	height: 24px;
+}
+
+.Navbar-Login, .Navbar-Register {
+	cursor: pointer;
+}
+
+.Navbar-Login {
+	border: 0;
+	background-color: transparent;
+}
+
+.Navbar-Register {
+	width: 50%;
+	height: 100%;
+	border-radius: 10px;
+	border: 2px solid #A7C957;
+	background-color: transparent;
+	transition: all 0.5s;
+}
+
+.Navbar-Register:hover {
+	color: white;
+	background-color: #A7C957;
+}

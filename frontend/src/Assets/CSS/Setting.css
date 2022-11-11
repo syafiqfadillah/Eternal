@@ -1,0 +1,100 @@
+.Setting {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.Setting-Div {
+	width: 80%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #A7C957;
+	border-radius: 50px;
+}
+
+.Setting-Layer1 {
+	width: 80%;
+	height: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.Setting-Layer1 h2 {
+	margin-bottom: 0;
+}
+
+.Setting-Layer1 p {
+	margin-top: 0;
+}
+
+.Setting-Layer2 {
+	width: 80%;
+	height: 70%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.Setting-Form {
+	width: 70%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.Setting-Component {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.Radios {
+	width: 45%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.Input-Bar {
+	width: 80%;
+	height: 100%;
+	padding: 0.5%;
+	padding-left: 1%;
+	border: 2px solid #386641;
+}
+
+.Input-Radio {
+	width: 20%;
+	accent-color: #386641;
+}
+
+.Setting-Submit {
+	width: 40%;
+	height: 10%;
+	border-radius: 10px;
+	border: 0;
+	background-color: #386641;
+	color: white;
+	cursor: pointer;
+}
+
+.Setting-Image {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 50%;
+}
+
+.Setting-Image input {
+	margin-left: 30%;
+}

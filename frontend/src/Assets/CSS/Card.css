@@ -1,0 +1,43 @@
+.Card {
+	width: 20vw;
+	height: 35vh;
+	transition: all 1s;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 8%;
+	cursor: pointer;
+}
+
+.Test {
+	width: 10vw;
+	height: 17vh;
+	background-color: #EEF4ED;
+	border-radius: 100px;
+	display: flex;
+	align-items: center;
+}
+
+.Card-Contents {
+	width: 20vw;
+	padding-left: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.Card p {
+	color: #386641;
+	font-weight: bold;
+}
+
+.Card:hover {
+	background-color: #A7C957;
+	transform: translateY(20px);
+}
+
+.Card-Image {
+	width: 200px;
+	transform: translate(-24px, -25px);
+}

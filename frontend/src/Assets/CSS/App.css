@@ -1,0 +1,32 @@
+h1, h2, h3 {
+	color: #386641;
+}
+
+p {
+	color: #A7C957;
+}
+
+.App {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	/*overflow: hidden;*/
+}
+
+.Products-Header {
+	padding-left: 5%;
+	height: 55vh;
+	display: flex;
+	flex-direction: column;
+	overflow: visible;
+}
+
+.Products-Header h2 {
+	color: #386641;
+}
+
+.Products-Cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
