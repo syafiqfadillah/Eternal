@@ -31,6 +31,11 @@
 .Navbar-Search {
 	width: 24px;
 	height: 24px;
+	transition: all 0.5s;
+}
+
+.Navbar-Search:hover {
+	opacity: 0.1;
 }
 
 .Navbar-Login, .Navbar-Register {
