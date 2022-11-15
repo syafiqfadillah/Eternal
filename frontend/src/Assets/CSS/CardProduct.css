@@ -1,0 +1,114 @@
+.CardProduct {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 80vw;
+	height: 60vh;
+	margin: auto;
+	border-radius: 10px;
+	background-color: white;
+	margin-top: 3%;
+}
+
+.CardProduct-Layer1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 40%;
+	height: 100%;
+}
+
+.Image-Product {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 70%;
+}
+
+.Image-Product img {
+	height: 100%;
+}
+
+.Wishlist-Shortcut {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	transition: all 0.5s;
+}
+
+.Wishlist-Shortcut:hover {
+	opacity: 0.3;
+}
+
+.Wishlist-Button {
+	background-color: transparent;
+	border: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 50%;
+	height: 100%;
+}
+
+.CardProduct-Layer2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 60%;
+	height: 100%;
+}
+
+.CardProduct-Layer2 button {
+	background-color: transparent;
+	border-radius: 10px;
+	border: 2px solid #A7C957;
+	transition: all 0.5s;
+}
+
+.CardProduct-Layer2 button:hover {
+	background-color: #A7C957;
+	color: white;
+}
+
+.CardProduct-Contents {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+} 
+
+.CardProduct-Kuantitas {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 60%;
+}
+
+.CardProduct-Kuantitas button {
+	width: 10%;
+	height: 50%;
+}
+
+.CardProduct-Buttons {
+	width: 70%;
+	height: 15%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.CardProduct-Buttons button {
+	width: 45%;
+	height: 75%;
+}
+
+.Cart-Shortcut {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}

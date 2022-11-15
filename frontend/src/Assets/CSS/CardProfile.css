@@ -1,0 +1,88 @@
+.CardProfile {
+	width: 80vw;
+	height: 25vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	margin-top: 3%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.CardProfile-Layer1 {
+	height: 100%;
+	width: 45%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border-right: 5px solid #F8F8FF;
+}
+
+.CardProfile-Layer2 {
+	height: 100%;
+	width: 55%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.CardProfile-Image {
+	padding-left: 5%;
+	width: 25%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.CardProfile-Contents {
+	width: 75%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.CardProfile-Contents h2 {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.CardProfile-Buttons {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.CardProfile-Buttons button {
+	width: 40%;
+	height: 50%;
+	background-color: transparent;
+	border-radius: 10px;
+	transition: all 0.5s;
+}
+
+.CardProfile-Buttons button:hover {
+	opacity: 0.3;
+}
+
+.CardProfile-Header {
+	width: 85%;
+	height: 50%;
+	display: flex;
+	align-items: center;
+	overflow: auto;
+}
+
+.Chat, .Kunjungi-Toko {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}

@@ -1,0 +1,10 @@
+.DetailProduct button {
+	cursor: pointer;
+}
+
+.DetailProduct {
+	background-color: #F8F8FF;
+	display: flex;
+	flex-direction: column;
+}
+

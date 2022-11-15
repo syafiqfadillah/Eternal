@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './Pages/App';
 import Setting from './Pages/Setting';
+import DetailProduct from "./Pages/DetailProduct";
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -10,6 +11,7 @@ root.render(
   <React.StrictMode>
     <App />
     {/* <Setting /> */}
+    {/*<DetailProduct />*/}
   </React.StrictMode>
 );
 

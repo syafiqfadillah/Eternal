@@ -1,0 +1,41 @@
+.Comments {
+	width: 80vw;
+/*	height: 70vh;*/
+	padding: 0.5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	margin-top: 3%;
+	background-color: white;
+	border-radius: 10px;
+/*	overflow: auto;*/
+/*	flex-wrap: wrap;*/
+}
+
+.CardComment {
+	padding: 0.5%;
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	border: 2px solid #A7C957;
+	border-radius: 10px;
+	margin-top: 1.5%;
+	margin-bottom: 3%;
+}
+
+
+.CardComment-Layer1 {
+	width: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.CardComment-Layer2 {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+}
