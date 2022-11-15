@@ -1,0 +1,35 @@
+.riwayat-beli {
+  width: 95%;
+  height: 70vh;
+  /* background-color: cadetblue; */
+  margin: auto;
+  margin-top: -0.5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-product {
+  width: 100%;
+  background-color: rgba(106, 107, 107, 0.2);
+  margin: auto;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  border-radius: 75px;
+}
+
+.product-img {
+  width: 20%;
+  /* border-radius: 30px; */
+}
+
+.tag {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.hide {
+  display: none;
+}

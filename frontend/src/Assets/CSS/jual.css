@@ -1,0 +1,52 @@
+.jual {
+  width: 95%;
+  height: 75vh;
+  margin: auto;
+  /* background-color: aquamarine; */
+}
+
+.hide {
+  display: none;
+}
+
+.div-jual {
+  width: 68.5vw;
+  height: 65vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.product {
+  width: 100%;
+  height: 15vh;
+  background-color: rgba(106, 107, 107, 0.2);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.img {
+  width: 20%;
+  height: 15vh;
+  /* background-color: cornflowerblue; */
+}
+
+.content {
+  width: 55%;
+  height: 15vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.total-harga {
+  width: 25%;
+  line-height: 15vh;
+  display: flex;
+  justify-content: center;
+  /* background-color: darkgray; */
+  font-size: 1.5vw;
+}
