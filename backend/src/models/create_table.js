@@ -1,14 +1,12 @@
 const db = require("./db_config")
 
-const sql = `CREATE TABLE riwayat_beli (
-                id_riwayatbeli INT NOT NULL AUTO_INCREMENT,
-                id_product INT(10),
+const sql = `CREATE TABLE product (
                 nm_toko VARCHAR(20),
-                nm_product VARCHAR(30),
-                deskripsi VARCHAR(200),
+                nm_tanaman VARCHAR(50),
+                deskripsi VARCHAR(100),
                 quantity VARCHAR(5),
-                harga_product VARCHAR(10),
-                PRIMARY KEY(id_riwayatbeli)
+                harga VARCHAR(20),
+                PRIMARY KEY(nm_toko)
             )`
 
 db.query(sql, (err) => {

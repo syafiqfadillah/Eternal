@@ -13,10 +13,11 @@ app.use(bodyParser.json())
 // router
 // const { jualProduct } = require("./routes")
 
-const { jualProduct, riwayatBeli } = require("./src/routes")
+const { jualProduct, riwayatBeli, profile } = require("./src/routes")
 
 // app.use("/riwayatbeli/v1", riwayatBeli)
 app.use("/profile", jualProduct)
 app.use("/profile", riwayatBeli)
+app.use("/profile", profile)
 
 app.listen(port, console.log(`Server running on http://localhost:${port}`))

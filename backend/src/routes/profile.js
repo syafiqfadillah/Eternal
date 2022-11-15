@@ -2,9 +2,8 @@ const express = require("express")
 const { body } = require("express-validator")
 const router = express.Router()
 
-const { postJual, getJual } = require("../controllers/jual_product")
+const { profile } = require("../controllers/profile")
 
-router.post("/jual/post", postJual)
-router.get("/jual/data", getJual)
+router.get("/profile", profile)
 
 module.exports = router
