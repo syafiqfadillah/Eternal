@@ -1,0 +1,75 @@
+.bg{
+    background-color: #F8F8FF;
+}
+.toko{
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    margin-top: 3%;
+}
+.imgprod{
+    width: 13vw;
+    align-items: center;
+    margin: auto;
+}
+.imgseller{
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    padding: 30px;
+}
+.profileseller{
+    padding-top: 30px;
+    padding-left: 10%;
+    background-color: #c8ecbf;
+    display: flex;
+    flex-direction: row;
+}
+.totalprod{
+    margin: 5%;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+    justify-content: space-around;
+    background-color: #c8ecbf;
+}
+.toko{
+    border: 1px solid rgb(7, 92, 45);
+}
+.cardprod{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    border: 1px solid #99C68E;
+    /* border-radius: 8px; */
+    width: 100%;
+    
+}
+.cardtoko{
+    width: 25%;
+}
+.wrap{
+    /* border: 1px solid black; */
+    margin: 3%;
+    padding-left: 10px;
+    width: 25%;
+}
+
+.wrap:hover{
+    background-color: #99C68E;
+    color: white;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.chat{
+    width: 80%;
+    height: 20%;
+    border-radius: 8px;
+    border-color: #777777;
+}
+.namaproduk{
+    text-decoration: none;
+}
