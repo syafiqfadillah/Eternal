@@ -5,12 +5,16 @@ import App from './Pages/App';
 import Setting from './Pages/Setting';
 import DetailProduct from "./Pages/DetailProduct";
 import reportWebVitals from './reportWebVitals';
+import Toko from "./Pages/Toko"
+import Cart from "./Pages/Cart"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/*<App />*/}
-     <Setting /> 
+     {/* <Setting />  */}
+     <Toko/>
+     {/* <Cart/> */}
     {/*<DetailProduct />*/}
   </React.StrictMode>
 );
