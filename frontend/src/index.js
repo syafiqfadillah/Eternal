@@ -8,12 +8,16 @@ import Checkout from "./Pages/Checkout";
 import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
 import reportWebVitals from './reportWebVitals';
+import Toko from "./Pages/Toko"
+import Cart from "./Pages/Cart"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-    {/*<Setting /> */}
+    {/*<App />*/}
+     {/* <Setting />  */}
+     <Toko/>
+     {/* <Cart/> */}
     {/*<DetailProduct />*/}
     {/*<Checkout />*/}
     {/*<Login />*/}

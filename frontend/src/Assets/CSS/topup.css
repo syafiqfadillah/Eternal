@@ -1,5 +1,19 @@
 .topup-div {
-  background-color: rgb(212, 56, 56);
-  width: 500px;
+  /* background-color: #c4f1f9; */
+  width: 70vw;
   height: 500px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.btn {
+  width: 100%;
+  background-color: #f0fff4;
+}
+
+.hide {
+  display: none;
 }
