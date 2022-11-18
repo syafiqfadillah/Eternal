@@ -4,14 +4,20 @@ import './index.css';
 import App from './Pages/App';
 import Setting from './Pages/Setting';
 import DetailProduct from "./Pages/DetailProduct";
+import Checkout from "./Pages/Checkout";
+import Signup from "./Pages/Signup";
+import Login from "./Pages/Login";
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/*<App />*/}
-     <Setting /> 
+    <App />
+    {/*<Setting /> */}
     {/*<DetailProduct />*/}
+    {/*<Checkout />*/}
+    {/*<Login />*/}
+    {/*<Signup />*/}
   </React.StrictMode>
 );
 

@@ -11,7 +11,7 @@ function CardProfile() {
 				</div>
 				<div className="CardProfile-Contents">
 					<div className="CardProfile-Header">
-						<h1>Admin</h1>
+						<h2>Admin</h2>
 					</div>
 					<div className="CardProfile-Buttons">
 						<button className="Chat"><img src={Chat} />Chat Penjual</button>

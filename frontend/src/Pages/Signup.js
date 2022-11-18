@@ -1,5 +1,7 @@
-import {Link} from "react-router-dom"
+// import {Link} from "react-router-dom"
 import logo from "../Assets/Images/eternal-logo.png"
+
+import "../Assets/CSS/Signup.css"
 
 const Signup = () =>{
     return(
@@ -12,16 +14,16 @@ const Signup = () =>{
                     <img src={logo} ></img>
                 </div>
                 <div className="isi4">
-                      <input className="dftr" type="text" placeholder="Nama "/> <br/> 
-                      <input className="dftr" type="text" placeholder="Alamat "/> <br/>   
-                      <input className="gender" type="radio" id="male" name="Gender" value="M"/> <label for="male">Male </label>
-                      <input className="gender" type="radio" id="female" name="Gender" value="F"/> <label for="female">Female</label> <br/>
-                      <input className="dftr" type="text" placeholder="Input e-mail"/> <br/>
-                      <input className="dftr" type="password" placeholder="Password"/> <br/>
-                      <button className="btnsignup">Log In</button>
+                    <input className="dftr" type="text" placeholder="Nama "/> <br/> 
+                    <input className="dftr" type="text" placeholder="Alamat "/> <br/>   
+                    <input className="gender" type="radio" id="male" name="Gender" value="M"/> <label for="male">Male </label>
+                    <input className="gender" type="radio" id="female" name="Gender" value="F"/> <label for="female">Female</label> <br/>
+                    <input className="dftr" type="text" placeholder="Input e-mail"/> <br/>
+                    <input className="dftr" type="password" placeholder="Password"/> <br/>
+                    <button className="btnsignup">Log In</button>
                 </div>
                 <label for="akun">Sudah punya akun? </label>
-                <Link to="/" id="akun">Login</Link>
+                {/*<Link to="/" id="akun">Login</Link>*/}
             </div>
         </div>
     )

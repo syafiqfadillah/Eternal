@@ -1,5 +1,7 @@
-import {Link} from "react-router-dom"
+// import {Link} from "react-router-dom"
 import logo from "../Assets/Images/eternal-logo.png"
+
+import "../Assets/CSS/Login.css"
 
 const Login = () =>{
     return(
@@ -9,15 +11,15 @@ const Login = () =>{
           </span>
           <div className="isi">  
               <div className="logonama">
-                <img className="iimg" src={logo}/>
+                  <img className="iimg" src={logo}/>
               </div>
-            <div className="isi1">
-                <input className="dftr" type="text" placeholder="Input e-mail"/> <br/>
-                <input className="dftr" type="text" placeholder="Password"/> <br/>
-                <button className="btnlogin">Log In</button>
-            </div>
-                <label for="akun">Belum punya akun? </label>
-                <Link to="/Signup" id="akun">Sign Up</Link>
+              <div className="isi1">
+                  <input className="dftr" type="text" placeholder="Input e-mail"/> <br/>
+                  <input className="dftr" type="text" placeholder="Password"/> <br/>
+                  <button className="btnlogin">Log In</button>
+              </div>
+              <label for="akun">Belum punya akun? </label>
+              {/*<Link to="/Signup" id="akun">Sign Up</Link>*/}
           </div>
       </div>
     )
