@@ -2,7 +2,6 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import "./index.css"
 import App from "./Pages/App"
-import Setting from "./Pages/Setting"
 import DetailProduct from "./Pages/DetailProduct"
 import Checkout from "./Pages/Checkout"
 import Signup from "./Pages/Signup"
@@ -14,8 +13,7 @@ import Cart from "./Pages/Cart"
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
   <React.StrictMode>
-    <App />
-    {/* <Setting />  */}
+    {/*<App />*/}  
     {/* <Toko/> */}
     {/* <Cart/> */}
     {/*<DetailProduct />*/}
