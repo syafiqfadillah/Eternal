@@ -13,6 +13,6 @@
 }
 
 .PlantLabel {
-	width: 35vh;
-	margin-bottom: 13.5%;
+	width: 20%;
+	align-self: flex-end;
 }
