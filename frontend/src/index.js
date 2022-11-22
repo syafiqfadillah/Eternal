@@ -12,14 +12,14 @@ import reportWebVitals from "./reportWebVitals"
 // import Toko from "./Pages/Toko"
 // import Cart from "./Pages/Cart"
 
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
   <Provider store={store}>
     <React.StrictMode>
       <Router>
-        <App />  
+        <App />
         {/*<Toko/>*/}
         {/*<Cart/>*/}
         {/*<DetailProduct />*/}
