@@ -22,3 +22,5 @@ export const counterSlice = createSlice({
 export const { setProfile, setRiwayatBeli } = counterSlice.actions
 
 export default counterSlice.reducer
+
+// halo
