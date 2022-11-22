@@ -7,15 +7,21 @@ import DetailProduct from "./Pages/DetailProduct";
 import reportWebVitals from './reportWebVitals';
 import Toko from "./Pages/Toko"
 import Cart from "./Pages/Cart"
+import Login from "./Pages/Login"
+import Signup from './Pages/Signup';
+import Checkout from './Pages/Checkout';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/*<App />*/}
+    {/* <App /> */}
      {/* <Setting />  */}
-     <Toko/>
+     {/* <Toko/> */}
+     {/* <Login/> */}
+     {/* <Signup/> */}
      {/* <Cart/> */}
     {/*<DetailProduct />*/}
+    <Checkout/>
   </React.StrictMode>
 );
 
