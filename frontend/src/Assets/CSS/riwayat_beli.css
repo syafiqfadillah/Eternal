@@ -11,12 +11,12 @@
 
 .profile-product {
   width: 100%;
-  background-color: rgba(106, 107, 107, 0.2);
+  background-color: rgba(163, 163, 163, 0.221);
   margin: auto;
-  height: 15vh;
+  height: 16vh;
   display: flex;
   flex-direction: row;
-  border-radius: 75px;
+  /* border-radius: 75px; */
 }
 
 .product-img {
@@ -32,4 +32,8 @@
 
 .hide {
   display: none;
+}
+
+Text {
+  font-family: "Quicksand", sans-serif;
 }

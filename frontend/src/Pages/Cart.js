@@ -36,7 +36,7 @@ const Cart = () =>{
 
     return(
       <div className="bgcart">
-        <NavbarLogin/>
+        <NavbarLogin />
         <div className="cart">  
             <div className="toko1">
               <div className="namaseller">

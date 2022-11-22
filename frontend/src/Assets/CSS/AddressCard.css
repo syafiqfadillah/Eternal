@@ -1,0 +1,38 @@
+.AlamatCheckout {
+	background-color: white;
+	border-radius: 10px;
+	width: 80vw;
+	display: flex;
+	flex-direction: column;
+	padding: 0% 1% 1% 1%;
+	margin: auto;
+	margin-top: 3%;
+}
+
+.AlamatCheckout-Header {
+	border-bottom: 4px solid #F8F8FF;
+}
+
+.AlamatCheckout-Header h2 {
+	width: 25%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.AlamatCheckout-Alamat {
+	display: flex;
+	flex-direction: row;
+}
+
+.Admin {
+	width: 10%;
+	display: flex;
+	justify-content: center;
+}
+
+.Alamat {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+}

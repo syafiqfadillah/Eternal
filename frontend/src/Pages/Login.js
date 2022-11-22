@@ -1,8 +1,10 @@
-import {Link} from "react-router-dom"
+// import {Link} from "react-router-dom"
 import logo from "../Assets/Images/eternal-logo.png"
 import bg from "../Assets/Images/bglogin.png"
 
 import "../Assets/CSS/Login.css";
+
+import "../Assets/CSS/Login.css"
 
 const Login = () =>{
     return(
@@ -16,7 +18,12 @@ const Login = () =>{
           </div>
           <div className="colomn2">  
               <div className="logonama">
-                <img className="iimg" src={logo}/>
+                  <img className="iimg" src={logo}/>
+              </div>
+              <div className="isi1">
+                  <input className="dftr" type="text" placeholder="Input e-mail"/> <br/>
+                  <input className="dftr" type="text" placeholder="Password"/> <br/>
+                  <button className="btnlogin">Log In</button>
               </div>
             <div className="isi1">
                 <h1>Welcome</h1>

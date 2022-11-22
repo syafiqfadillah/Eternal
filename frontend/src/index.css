@@ -1,4 +1,5 @@
 body {
+  background-color: #F8F8FF;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -12,6 +13,18 @@ code {
 * {
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
+}
+
+h1, h2, h3 {
+  color: #386641;
+}
+
+p {
+  color: #A7C957;
+}
+
+button {
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {

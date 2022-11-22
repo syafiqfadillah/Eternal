@@ -1,6 +1,8 @@
-import {Link} from "react-router-dom"
+// import {Link} from "react-router-dom"
 import logo from "../Assets/Images/eternal-logo.png"
 import bg from "../Assets/Images/bglogin.png"
+import "../Assets/CSS/Signup.css"
+
 import "../Assets/CSS/Signup.css"
 
 const Signup = () =>{
@@ -30,9 +32,7 @@ const Signup = () =>{
                       <label for="akun">Sudah punya akun? </label>
                       <a href="" id="akun">Login</a>
                       {/* <Link to="/" id="akun">Login</Link> */}
-                </div>
-                
-                
+                </div>       
             </div>
         </div>
     )

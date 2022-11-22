@@ -11,21 +11,27 @@ import Login from "./Pages/Login"
 import Signup from './Pages/Signup';
 import Checkout from './Pages/Checkout';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import { BrowserRouter as Router } from "react-router-dom"
+
+const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
-  <React.StrictMode>
-    {/* <App /> */}
-     {/* <Setting />  */}
-     {/* <Toko/> */}
-     {/* <Login/> */}
-     {/* <Signup/> */}
-     {/* <Cart/> */}
-    {/*<DetailProduct />*/}
-    <Checkout/>
-  </React.StrictMode>
-);
+
+  <Provider store={store}>
+    <React.StrictMode>
+      <Router>
+        <App />
+        {/*<Toko/>*/}
+        {/*<Cart/>*/}
+        {/*<DetailProduct />*/}
+        {/*<Checkout />*/}
+        {/*<Login />*/}
+        {/*<Signup />*/}
+      </Router>
+    </React.StrictMode>
+  </Provider>
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+reportWebVitals()
