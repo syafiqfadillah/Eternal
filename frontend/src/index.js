@@ -16,7 +16,7 @@ root.render(
   <React.StrictMode>
     <App />
     {/* <Setting />  */}
-    {/* <Toko/> */}
+    {/* <Toko /> */}
     {/* <Cart/> */}
     {/*<DetailProduct />*/}
     {/*<Checkout />*/}
