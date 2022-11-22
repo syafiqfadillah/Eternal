@@ -1,55 +1,26 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit"
+// import { useEffect } from "react"
 
 const initialState = {
-	cardData: [{
-	      head: "This is a Tree",
-	      price: "Rp 100.000"
-	    },
-	    {
-	      head: "This is a not a Tree",
-	      price: "Rp 50.000"
-	    },
-	    {
-	      head: "This is a Tree",
-	      price: "Rp 10.000.000"
-	    },
-	    {
-	      head: "This is a Tree",
-	      price: "Rp 10.000.000"
-	    },
-	      {
-	      head: "This is a Tree",
-	      price: "Rp 100.000"
-	    },
-	    {
-	      head: "This is a not a Tree",
-	      price: "Rp 50.000"
-	    },
-	    {
-	      head: "This is a Tree",
-	      price: "Rp 10.000.000"
-	    },
-	    {
-	      head: "This is a Tree",
-	      price: "Rp 10.000.000"
-	    }
-	],
-	index: 0
+  profile: [],
+  riwayatBeli: [],
 }
 
 export const counterSlice = createSlice({
-	name: "counter",
-	initialState,
-	reducers: {
-		setCardData: (state, action) => {
-			state.cardData = action.payload
-		},
-		setIndex: (state, action) => {
-			state.index = action.payload
-		}
-	}
+  name: "x",
+  initialState,
+  reducers: {
+    setProfile: (state, action) => {
+      state.profile = action.payload
+    },
+    setRiwayatBeli: (state, action) => {
+      state.riwayatBeli = action.payload
+    },
+  },
 })
 
-export const { setCardData, setIndex } = counterSlice.actions
+export const { setProfile, setRiwayatBeli } = counterSlice.actions
 
 export default counterSlice.reducer
+
+// halo
