@@ -1,39 +1,13 @@
+import Plant from "../Assets/Images/Plant-Card0.png";
+import Plant1 from "../Assets/Images/Plant-Card1.png";
+
 import { createSlice } from "@reduxjs/toolkit";
+import { useEffect } from "react";
 
 const initialState = {
-	cardData: [{
-	      head: "This is a Tree",
-	      price: "Rp 100.000"
-	    },
-	    {
-	      head: "This is a not a Tree",
-	      price: "Rp 50.000"
-	    },
-	    {
-	      head: "This is a Tree",
-	      price: "Rp 10.000.000"
-	    },
-	    {
-	      head: "This is a Tree",
-	      price: "Rp 10.000.000"
-	    },
-	      {
-	      head: "This is a Tree",
-	      price: "Rp 100.000"
-	    },
-	    {
-	      head: "This is a not a Tree",
-	      price: "Rp 50.000"
-	    },
-	    {
-	      head: "This is a Tree",
-	      price: "Rp 10.000.000"
-	    },
-	    {
-	      head: "This is a Tree",
-	      price: "Rp 10.000.000"
-	    }
-	],
+	profile: [],
+    riwayatBeli: [],
+	cardData: [],
 	index: 0
 }
 
@@ -46,7 +20,13 @@ export const counterSlice = createSlice({
 		},
 		setIndex: (state, action) => {
 			state.index = action.payload
-		}
+		},
+		setProfile: (state, action) => {
+            state.profile = action.payload
+        },
+        setRiwayatBeli: (state, action) => {
+            state.riwayatBeli = action.payload
+       } 
 	}
 })
 

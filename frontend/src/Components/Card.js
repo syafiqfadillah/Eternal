@@ -4,17 +4,16 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setCardData, setIndex } from '../Redux/counterSlice';
 
 function Card(props) {
-	const dispatch = useDispatch()
-	dispatch(setIndex(props.index))
+	let dispatch = useDispatch()
 
 	return (
-		<div className="Card">
+		<div className="Card" onClick={() => dispatch(setIndex(props.keys))}>
 			<div className="Test">
-				<img className="Card-Image" src={Card0} />
+				<img className="Card-Image" src={props.img} />
 			</div>
 			<div className="Card-Contents">
 				<h3>{props.head}</h3>
-				<p>{props.price}</p>
+				<p>${props.price}</p>
 			</div>
 		</div>
 	)

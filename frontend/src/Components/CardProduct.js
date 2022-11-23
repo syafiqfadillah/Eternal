@@ -13,7 +13,7 @@ function CardProduct() {
 		<div className="CardProduct">
 			<div className="CardProduct-Layer1">
 				<div className="Image-Product">
-					<img src={PalmProduct} />
+					<img src={cardData[index].images[0]} />
 				</div>
 				<div className="Wishlist-Shortcut">
 					<button className="Wishlist-Button"><img src={Wishlist} />Wishlist</button>
@@ -21,16 +21,16 @@ function CardProduct() {
 			</div>
 			<div className="CardProduct-Layer2">
 				<div className="CardProduct-Contents">
-					<h1 className="CardProduct-Header">{cardData[index].head}</h1>
+					<h1 className="CardProduct-Header">{cardData[index].title}</h1>
 					<p>1 Terjual</p>
-					<h1>RP {cardData[index].price}</h1>
+					<h1>${cardData[index].price}</h1>
 				</div>
 				<div className="CardProduct-Kuantitas">
 					<p>Kuantitas</p>
 					<button>-</button>
 					<p>1</p>
 					<button>+</button>
-					<p>Tersisa 23132 Buah</p>
+					<p>Tersisa {cardData[index].stock} Buah</p>
 				</div>
 				<div className="CardProduct-Buttons">
 					<button className="Cart-Shortcut"><img src={Cart} />Masukan Ke Keranjang</button>

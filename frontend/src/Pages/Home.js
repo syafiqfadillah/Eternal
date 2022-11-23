@@ -1,9 +1,9 @@
-import Navbar from "./Navbar.js";
-import NavbarLogin from "./NavbarLogin.js";
-import Label from "./Label.js";
-import SwiperMod from "./SwiperMod.js";
-import Reason from "./Reason.js";
-import Footer from "./Footer.js";
+import Navbar from "../Components/Navbar.js";
+import NavbarLogin from "../Components/NavbarLogin.js";
+import Label from "../Components/Label.js";
+import SwiperMod from "../Components/SwiperMod.js";
+import Reason from "../Components/Reason.js";
+import Footer from "../Components/Footer.js";
 
 import '../Assets/CSS/Home.css';
 import '../Assets/CSS/Navbar.css';
@@ -16,41 +16,11 @@ import '../Assets/CSS/Footer.css';
 
 import Plant from "../Assets/Images/Plant.jpg"
 
+import { useSelector, useDispatch } from 'react-redux';
+import { setCardData, setIndex } from '../Redux/counterSlice';
+
 function Home() {
-	const cards = [
-	    {
-	      head: "This is a Tree",
-	      price: "Rp 100.000"
-	    },
-	    {
-	      head: "This is a not a Tree",
-	      price: "Rp 50.000"
-	    },
-	    {
-	      head: "This is a Tree",
-	      price: "Rp 10.000.000"
-	    },
-	    {
-	      head: "This is a Tree",
-	      price: "Rp 10.000.000"
-	    },
-	      {
-	      head: "This is a Tree",
-	      price: "Rp 100.000"
-	    },
-	    {
-	      head: "This is a not a Tree",
-	      price: "Rp 50.000"
-	    },
-	    {
-	      head: "This is a Tree",
-	      price: "Rp 10.000.000"
-	    },
-	    {
-	      head: "This is a Tree",
-	      price: "Rp 10.000.000"
-	    },
-  	]
+	const cardData = useSelector((state) => state.counter.cardData)
 
 	return (
 		<div className="Home">
@@ -73,7 +43,7 @@ function Home() {
 			<div className="Slider">
 		        <div className="Products-Header">
 		          <h2>Products</h2>
-		          <SwiperMod data={cards} />
+		          <SwiperMod data={cardData} />
 		        </div>
 	      	</div>
 			<Reason />
