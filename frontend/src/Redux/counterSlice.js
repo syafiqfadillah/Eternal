@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 const initialState = {
 	profile: [],
-    riwayatBeli: [],
+  riwayatBeli: [],
 	cardData: [],
 	index: 0
 }
@@ -22,14 +22,14 @@ export const counterSlice = createSlice({
 			state.index = action.payload
 		},
 		setProfile: (state, action) => {
-            state.profile = action.payload
-        },
-        setRiwayatBeli: (state, action) => {
-            state.riwayatBeli = action.payload
-       } 
+      state.profile = action.payload
+    },
+    setRiwayatBeli: (state, action) => {
+      state.riwayatBeli = action.payload
+    } 
 	}
 })
 
-export const { setCardData, setIndex } = counterSlice.actions
+export const { setProfile, setRiwayatBeli } = counterSlice.actions
 
 export default counterSlice.reducer

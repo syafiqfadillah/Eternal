@@ -1,25 +1,25 @@
-import React from "react"
-import { Provider } from "react-redux"
-import store from "../src/Redux/store"
-import ReactDOM from "react-dom/client"
-import "./index.css"
-import App from "./Pages/App"
-// import DetailProduct from "./Pages/DetailProduct"
-// import Checkout from "./Pages/Checkout"
-// import Signup from "./Pages/Signup"
-// import Login from "./Pages/Login"
-import reportWebVitals from "./reportWebVitals"
-// import Toko from "./Pages/Toko"
-// import Cart from "./Pages/Cart"
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './Pages/App';
+import Setting from './Pages/Setting';
+import DetailProduct from "./Pages/DetailProduct";
+import reportWebVitals from './reportWebVitals';
+import Toko from "./Pages/Toko"
+import Cart from "./Pages/Cart"
+import Login from "./Pages/Login"
+import Signup from './Pages/Signup';
+import Checkout from './Pages/Checkout';
 
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
+
   <Provider store={store}>
     <React.StrictMode>
       <Router>
-        <App />  
+        <App />
         {/*<Toko/>*/}
         {/*<Cart/>*/}
         {/*<DetailProduct />*/}
