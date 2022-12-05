@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
 	byId: [],
 	profile: [],
-    riwayatBeli: [],
+  riwayatBeli: [],
 	cardData: [],
 	index: 0
 }

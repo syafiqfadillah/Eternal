@@ -1,5 +1,8 @@
 // import {Link} from "react-router-dom"
 import logo from "../Assets/Images/eternal-logo.png"
+import bg from "../Assets/Images/bglogin.png"
+
+import "../Assets/CSS/Login.css";
 
 import "../Assets/CSS/Login.css"
 
