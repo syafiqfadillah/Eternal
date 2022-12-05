@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import Profile from "../Assets/Images/Profile.png";
 import Chat from "../Assets/Images/Chat.png";
 import Shop from "../Assets/Images/Shop.png";
@@ -14,8 +16,7 @@ function CardProfile() {
 						<h2>Admin</h2>
 					</div>
 					<div className="CardProfile-Buttons">
-						<button className="Chat"><img src={Chat} />Chat Penjual</button>
-						<button className="Kunjungi-Toko"><img src={Shop} /> Kunjungi Toko</button>
+						<Link className="Kunjungi-Toko" to="/Store"><img src={Shop} /> Kunjungi Toko</Link>
 					</div>
 				</div>	
 			</div>

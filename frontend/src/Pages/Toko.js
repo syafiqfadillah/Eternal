@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react";
-import {Link} from "react-router-dom"
 import Card from "../Components/Cardtoko.js"
 import NavbarLogin from "../Components/NavbarLogin.js"
 import Footer from "../Components/Footer.js";
@@ -76,10 +74,10 @@ function Toko() {
             </div> 
             <div className="cardprod">
                 {Order.map((card, i) => 
-                <div className="wrap">
-                    <Card key={i} nama={card.nama} harga={card.harga} />
-                </div>
-             )}
+                    <div className="wrap">
+                        <Card key={i} nama={card.nama} harga={card.harga} />
+                    </div>
+                    )}
             </div> 
         </div>
         <Footer/>

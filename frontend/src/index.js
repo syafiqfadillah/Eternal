@@ -1,15 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './Pages/App';
-import Setting from './Pages/Setting';
-import DetailProduct from "./Pages/DetailProduct";
-import reportWebVitals from './reportWebVitals';
-import Toko from "./Pages/Toko"
-import Cart from "./Pages/Cart"
-import Login from "./Pages/Login"
-import Signup from './Pages/Signup';
-import Checkout from './Pages/Checkout';
+import React from "react"
+import { Provider } from "react-redux"
+import store from "../src/Redux/store"
+import ReactDOM from "react-dom/client"
+import "./index.css"
+import App from "./App"
+import ScrollToTop from "./Components/ScrollToTop"
+
+import reportWebVitals from "./reportWebVitals"
 
 import { BrowserRouter as Router } from "react-router-dom"
 
@@ -19,13 +16,8 @@ root.render(
   <Provider store={store}>
     <React.StrictMode>
       <Router>
-        <App />
-        {/*<Toko/>*/}
-        {/*<Cart/>*/}
-        {/*<DetailProduct />*/}
-        {/*<Checkout />*/}
-        {/*<Login />*/}
-        {/*<Signup />*/}
+        <ScrollToTop />
+        <App /> 
       </Router>
     </React.StrictMode>
   </Provider>

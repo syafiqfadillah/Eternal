@@ -1,10 +1,7 @@
-import Plant from "../Assets/Images/Plant-Card0.png";
-import Plant1 from "../Assets/Images/Plant-Card1.png";
-
 import { createSlice } from "@reduxjs/toolkit";
-import { useEffect } from "react";
 
 const initialState = {
+	byId: [],
 	profile: [],
   riwayatBeli: [],
 	cardData: [],
@@ -15,6 +12,9 @@ export const counterSlice = createSlice({
 	name: "counter",
 	initialState,
 	reducers: {
+		setById: (state, action) => {
+			state.byId = action.payload
+		},
 		setCardData: (state, action) => {
 			state.cardData = action.payload
 		},
@@ -22,14 +22,14 @@ export const counterSlice = createSlice({
 			state.index = action.payload
 		},
 		setProfile: (state, action) => {
-      state.profile = action.payload
-    },
-    setRiwayatBeli: (state, action) => {
-      state.riwayatBeli = action.payload
-    } 
+            state.profile = action.payload
+        },
+        setRiwayatBeli: (state, action) => {
+            state.riwayatBeli = action.payload
+		} 
 	}
 })
 
-export const { setProfile, setRiwayatBeli } = counterSlice.actions
+export const { setCardData, setIndex, setById } = counterSlice.actions
 
 export default counterSlice.reducer

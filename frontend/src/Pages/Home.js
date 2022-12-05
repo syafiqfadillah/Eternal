@@ -1,4 +1,9 @@
-import Navbar from "../Components/Navbar.js";
+import axios from "axios";
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useDispatch } from 'react-redux';
+import { setCardData } from '../Redux/counterSlice';
+
 import NavbarLogin from "../Components/NavbarLogin.js";
 import Label from "../Components/Label.js";
 import SwiperMod from "../Components/SwiperMod.js";
@@ -16,11 +21,14 @@ import '../Assets/CSS/Footer.css';
 
 import Plant from "../Assets/Images/Plant.jpg"
 
-import { useSelector, useDispatch } from 'react-redux';
-import { setCardData, setIndex } from '../Redux/counterSlice';
-
 function Home() {
-	const cardData = useSelector((state) => state.counter.cardData)
+	// const dispatch = useDispatch()
+
+	// useEffect(() => {
+	// 	axios.get('https://dummyjson.com/products')
+	// 		.then(res => dispatch(setCardData(res.data.products)))
+	// 		.catch(err => console.log(err))
+	// }, [])
 
 	return (
 		<div className="Home">
@@ -33,19 +41,19 @@ function Home() {
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br/>
 						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					</p>
-					<button className="Home-Explorer">Explorer</button>
+					<Link to="/Explore" className="Home-Explorer">Explorer</Link>
 				</div>
 				<div className="Home-Layer2">
-					<img src={Plant} />
+					<img src={Plant} alt="product"/>
 				</div>
 			</div>
 			<Label />
 			<div className="Slider">
-		        <div className="Products-Header">
-		          <h2>Products</h2>
-		          <SwiperMod data={cardData} />
-		        </div>
-	      	</div>
+				<div className="Products-Header">
+					<h2>Products</h2>
+					<SwiperMod/>
+				</div>
+			</div>
 			<Reason />
 			<Footer />
 		</div>
