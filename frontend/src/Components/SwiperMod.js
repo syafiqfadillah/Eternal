@@ -1,10 +1,6 @@
-import axios from 'axios';
-
-import { useEffect } from 'react';
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { useSelector, useDispatch } from 'react-redux';
-import { setCardData } from '../Redux/counterSlice';
+import { useSelector } from 'react-redux';
 
 import Card from "./Card.js";
 

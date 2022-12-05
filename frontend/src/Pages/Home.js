@@ -1,8 +1,4 @@
-import axios from "axios";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
-import { useDispatch } from 'react-redux';
-import { setCardData } from '../Redux/counterSlice';
 
 import NavbarLogin from "../Components/NavbarLogin.js";
 import Label from "../Components/Label.js";
@@ -22,14 +18,6 @@ import '../Assets/CSS/Footer.css';
 import Plant from "../Assets/Images/Plant.jpg"
 
 function Home() {
-	// const dispatch = useDispatch()
-
-	// useEffect(() => {
-	// 	axios.get('https://dummyjson.com/products')
-	// 		.then(res => dispatch(setCardData(res.data.products)))
-	// 		.catch(err => console.log(err))
-	// }, [])
-
 	return (
 		<div className="Home">
 			<NavbarLogin />
