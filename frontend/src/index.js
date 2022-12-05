@@ -7,14 +7,19 @@ import App from "./App"
 import ScrollToTop from "./Components/ScrollToTop"
 
 import reportWebVitals from "./reportWebVitals"
-
 import { BrowserRouter as Router } from "react-router-dom"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
   <Provider store={store}>
     <React.StrictMode>
-      <Router>
+        {/* <App /> */}
+        {/*<Toko/>*/}
+        {/*<Cart/>*/}
+        {/*<DetailProduct />*/}
+        {/*<Checkout />*/}
+        <Login />
+        {/* <Signup /> */}
         <ScrollToTop />
         <App /> 
       </Router>
