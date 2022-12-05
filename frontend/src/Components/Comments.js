@@ -28,7 +28,7 @@ function Comments() {
 		<div className="Comments">
 			<h1>Comments</h1>
 			{data.map((e, i) => (
-				<CardComment username={e.name} review={e.review} />
+				<CardComment key={i} username={e.name} review={e.review} />
 			))}
 		</div>
 	)

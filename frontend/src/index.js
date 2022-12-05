@@ -3,14 +3,10 @@ import { Provider } from "react-redux"
 import store from "../src/Redux/store"
 import ReactDOM from "react-dom/client"
 import "./index.css"
-import App from "./Pages/App"
-// import DetailProduct from "./Pages/DetailProduct"
-// import Checkout from "./Pages/Checkout"
-// import Signup from "./Pages/Signup"
-// import Login from "./Pages/Login"
+import App from "./App"
+import ScrollToTop from "./Components/ScrollToTop"
+
 import reportWebVitals from "./reportWebVitals"
-// import Toko from "./Pages/Toko"
-// import Cart from "./Pages/Cart"
 
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -19,13 +15,8 @@ root.render(
   <Provider store={store}>
     <React.StrictMode>
       <Router>
-        <App />  
-        {/*<Toko/>*/}
-        {/*<Cart/>*/}
-        {/*<DetailProduct />*/}
-        {/*<Checkout />*/}
-        {/*<Login />*/}
-        {/*<Signup />*/}
+        <ScrollToTop />
+        <App /> 
       </Router>
     </React.StrictMode>
   </Provider>
