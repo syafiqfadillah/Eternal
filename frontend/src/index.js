@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './Pages/App';
-import Setting from './Pages/Setting';
+// import Setting from './Pages/Setting';
 import DetailProduct from "./Pages/DetailProduct";
 import reportWebVitals from './reportWebVitals';
 import Toko from "./Pages/Toko"
@@ -10,6 +10,8 @@ import Cart from "./Pages/Cart"
 import Login from "./Pages/Login"
 import Signup from './Pages/Signup';
 import Checkout from './Pages/Checkout';
+import store from './Redux/store'
+import { Provider } from 'react-redux';
 
 import { BrowserRouter as Router } from "react-router-dom"
 
@@ -19,13 +21,13 @@ root.render(
   <Provider store={store}>
     <React.StrictMode>
       <Router>
-        <App />
+        {/* <App /> */}
         {/*<Toko/>*/}
         {/*<Cart/>*/}
         {/*<DetailProduct />*/}
         {/*<Checkout />*/}
-        {/*<Login />*/}
-        {/*<Signup />*/}
+        <Login />
+        {/* <Signup /> */}
       </Router>
     </React.StrictMode>
   </Provider>

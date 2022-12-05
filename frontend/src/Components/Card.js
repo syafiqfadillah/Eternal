@@ -1,22 +1,18 @@
-import Card0 from "../Assets/Images/Plant-Card0.png";
+import { Link } from "react-router-dom";
 
-import { useSelector, useDispatch } from 'react-redux';
-import { setCardData, setIndex } from '../Redux/counterSlice';
-
-function Card(props) {
-	const dispatch = useDispatch()
-	dispatch(setIndex(props.index))
-
+function Card({props}) {
 	return (
-		<div className="Card">
-			<div className="Test">
-				<img className="Card-Image" src={Card0} />
+		<Link to={`/Product/?id=${props.id}`}>
+			<div className="Card">
+				<div className="Test">
+					<img className="Card-Image" src={props.images[0]} alt="product"/>
+				</div>
+				<div className="Card-Contents">
+					<h3>{props.title}</h3>
+					<p>${props.price}</p>
+				</div>
 			</div>
-			<div className="Card-Contents">
-				<h3>{props.head}</h3>
-				<p>{props.price}</p>
-			</div>
-		</div>
+		</Link>
 	)
 }
 

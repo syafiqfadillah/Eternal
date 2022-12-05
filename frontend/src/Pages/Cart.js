@@ -1,6 +1,6 @@
 import React from "react"
 import {Link} from "react-router-dom"
-import Card from "../Components/CardCheckout.js"
+import Card from "../Components/Cardcart"
 import CardSeller from "../Components/CardSellercart.js"
 import NavbarLogin from "../Components/NavbarLogin.js"
 import Footer from "../Components/Footer.js"

@@ -76,6 +76,7 @@
 .logonamadftr img{
   width: 200px;
   object-fit: cover;
+  margin-top: 2%;
 }
 .logonamadftr{
   display: flex;
