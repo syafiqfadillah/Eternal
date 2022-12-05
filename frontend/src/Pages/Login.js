@@ -1,7 +1,5 @@
-// import {Link} from "react-router-dom"
-import { useEffect, useState } from "react"
+
 import logo from "../Assets/Images/eternal-logo.png"
-import bg from "../Assets/Images/bglogin.png"
 
 import "../Assets/CSS/Login.css";
 
@@ -35,6 +33,7 @@ const Login = () =>{
   }
 
     return(
+
       <div className="Login">
           <div className="colomn1">
             <div className="apa"></div>
@@ -51,12 +50,10 @@ const Login = () =>{
                   <input type='password' placeholder='Password' value={formData.password} name='password' onChange={e => handleChange(e)} ></input>
                   <button className='login-btn' type='submit'>Login</button>
                 </form>
+
                 <label for="akun">Belum punya akun? </label>
-                <a href="" id="akun">Login</a>
-                {/* <Link to="/Signup" id="akun">Sign Up</Link> */}
-            </div >
-          </div>
-      </div>
+            </div>
+        </div>
     )
 }
 

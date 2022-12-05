@@ -1,4 +1,5 @@
 import React from "react"
+
 import {Link} from "react-router-dom"
 import Card from "../Components/Cardcart"
 import CardSeller from "../Components/CardSellercart.js"
@@ -10,8 +11,7 @@ import "../Assets/CSS/Footer.css";
 import '../Assets/CSS/Cart.css';
 
 const Cart = () =>{
-    
-    const Order= [
+    const Order = [
         {
             namaproduk: "Tuba (Derris elliptica)",
             price: "Rp 100.000",
@@ -51,9 +51,7 @@ const Cart = () =>{
                 <th className="tablesubtotal">Subtotal</th>
               </tr>
               {Order.map((card, i) => (
-                
                   <Card key={i} namaproduk={card.namaproduk} price={card.price} subtotal={card.subtotal} />
-                
               ))}    
             </table>
           </div>
