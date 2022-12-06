@@ -1,5 +1,4 @@
-const jualProduct = require("./jual_product")
-const riwayatBeli = require("./riwayat_beli")
-const profile = require("./profile")
+import express from "express"
 
-module.exports = { jualProduct, riwayatBeli, profile }
+export const Profile = require("./Profile")
+export const Jual = require("./Jual")
