@@ -1,6 +1,6 @@
-const db = require("./db_config")
+import db from "./db_config"
 
-const model = (sql, res, msg) => {
+export const model = (sql, res, msg) => {
   db.query(sql, (err, result) => {
     if (err) throw err
     res.status(200).json({
@@ -10,4 +10,3 @@ const model = (sql, res, msg) => {
   })
 }
 
-module.exports = model

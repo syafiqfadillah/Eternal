@@ -1,5 +1,9 @@
-
+// import {Link} from "react-router-dom"
+import axios from 'axios';
+import { useEffect, useState } from "react"
+import { useNavigate } from 'react-router-dom';
 import logo from "../Assets/Images/eternal-logo.png"
+import bg from "../Assets/Images/bglogin.png"
 
 import "../Assets/CSS/Login.css";
 
@@ -10,30 +14,30 @@ import "../Assets/CSS/Login.css"
 // import { setProfile, set } from "../Redux/counterSlice"
 
 const Login = () =>{
-  const [formData, setFormData] = useState({
-    email: '', // required
-    password: '' // required
-  })
+  const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [msg, setMsg] = useState('');
+    const navigate = useNavigate();
+ 
+    const Login = async (e) => {
+        e.preventDefault();
+        try {
+            await axios.post('http://localhost:7789/login', {
+                email: email,
+                password: password
+            });
+            // console.log(res)
+            navigate.push("/") 
+        } catch (error) {
+            if (error.response) {
+                setMsg(error.response.data.msg);
+            }
+        }
+    }
 
-  function handleSubmit(e) {
-      e.preventDefault()
-      fetch('https://dummyjson.com/auth/login', {
-          method: 'POST',
-          headers: {'Content-Type' : 'application/json'},
-          body: JSON.stringify(formData)
-      })
-      .then(res => res.json())
-      .then(console.log);
-      // .then(data => console.log(data.user))
-      // .then(res => console.log(res.user))
-  }
 
-  function handleChange(e) {
-      setFormData({...formData, [e.target.name] : e.target.value})
-  }
 
     return(
-
       <div className="Login">
           <div className="colomn1">
             <div className="apa"></div>
@@ -45,15 +49,17 @@ const Login = () =>{
               </div>
             <div className="isi1">
                 <h1>Welcome</h1>
-                <form className='login-form' onSubmit={e => handleSubmit(e)}>
-                  <input type='text' placeholder='Email' value={formData.email} name='email' onChange={e => handleChange(e)} ></input>
-                  <input type='password' placeholder='Password' value={formData.password} name='password' onChange={e => handleChange(e)} ></input>
-                  <button className='login-btn' type='submit'>Login</button>
-                </form>
-
+                <div className='login-form'>
+                  <input type='text' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} ></input>
+                  <input type='password' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} ></input>
+                  <button className='login-btn' type='button' onClick={Login}>Login</button>
+                </div>
                 <label for="akun">Belum punya akun? </label>
-            </div>
-        </div>
+                <a href="" id="akun" >Login</a>
+                {/* <Link to="/Signup" id="akun">Sign Up</Link> */}
+            </div >
+          </div>
+      </div>
     )
 }
 
