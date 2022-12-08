@@ -12,29 +12,33 @@ const Cart = () =>{
     const Order = [
         {
             namaproduk: "Tuba (Derris elliptica)",
-            price: "Rp 100.000",
-            subtotal: "Rp 100.000"
+            price: 100000,
+            subtotal: 100000
           },
           {
             namaproduk: "Melati putih (Jasminum sambac)",
-            price: "Rp 50.000",
-            subtotal: "Rp 50.000"
+            price: 50000,
+            subtotal: 50000
           },
           {
             namaproduk: "Gloksinia (Gloxinia speciosa)",
-            price: "Rp 10.000.000",
-            subtotal: "Rp 10.000.000",
+            price: 10000000,
+            subtotal: 10000000,
           },
           
     ];
-    const seller =[
+    const seller = [
       {namaseller : "Thyme Out Shop"}
     ]
 
+    let total = 0
+
+    Order.forEach((item, i) => {
+      total += item.price
+    })
 
     return(
       <div className="bgcart">
-        <NavbarLogin />
         <div className="cart">  
             <div className="toko1">
               <div className="namaseller">
@@ -55,12 +59,11 @@ const Cart = () =>{
           </div>
           <div className="beli">
                 <h4>Ringkasan Belanja</h4>
-                <p>Jumlah : 3 Barang</p>
-                <p>Total harga : Rp. 10.150.000</p>
+                <p>Jumlah : {Object.keys(Order).length} Barang</p>
+                <p>Total harga : ${total}</p>
                 <button className="cartco">Check Out</button>
           </div>
         </div>
-        <Footer/>
       </div>
     )
 }

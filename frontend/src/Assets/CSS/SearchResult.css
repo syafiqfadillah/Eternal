@@ -1,0 +1,8 @@
+.SearchResult {
+    display: flex;
+    flex-direction: column;
+}
+
+.SearchResult-Layer1 {
+    padding-left: 5%;
+}

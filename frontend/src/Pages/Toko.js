@@ -57,7 +57,6 @@ function Toko() {
 ]
     return(
     <div className="bg">
-    <NavbarLogin/>
         <div className="toko"> 
             <div className="profile">
                 <div className="profileseller">
@@ -80,7 +79,6 @@ function Toko() {
                     )}
             </div> 
         </div>
-        <Footer/>
     </div>
     )
 }

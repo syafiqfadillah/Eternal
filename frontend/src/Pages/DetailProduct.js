@@ -41,12 +41,12 @@ function DetailProduct() {
 
 	return (
 		<div className="DetailProduct">
-			<NavbarLogin />
+			{/* <NavbarLogin /> */}
 			<CardProduct />
 			<CardProfile />
 			<CardDescription />
 			<Comments />
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 		
 	)
