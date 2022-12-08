@@ -20,7 +20,6 @@ import Plant from "../Assets/Images/Plant.jpg"
 function Home() {
 	return (
 		<div className="Home">
-			<NavbarLogin />
 			<div className="Home-Child">
 				<div className="Home-Layer1">
 					<h1 className="Home-Header1">Plants Make</h1>
@@ -43,7 +42,6 @@ function Home() {
 				</div>
 			</div>
 			<Reason />
-			<Footer />
 		</div>
 	)
 }

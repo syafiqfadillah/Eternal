@@ -11,7 +11,6 @@ function Explore() {
 
     return (
         <div className="Explore">
-            <NavbarLogin />
             <div className="Explore-Layer1">
                 <h2>Explore</h2>
                 <div className="Products">
@@ -20,7 +19,6 @@ function Explore() {
                     ))}
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

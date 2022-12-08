@@ -12,10 +12,8 @@ import "../Assets/CSS/Footer.css";
 function Checkout() {
 	return (
 		<div className="Checkout">
-			<NavbarLogin />
 			<AddressCard />
 			<CalculationCard />
-			<Footer />
 		</div>
 	)
 }
