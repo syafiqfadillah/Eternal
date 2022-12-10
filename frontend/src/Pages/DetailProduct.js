@@ -4,8 +4,6 @@ import { setById } from '../Redux/counterSlice';
 import { useDispatch } from 'react-redux';
 
 import CardProduct from "../Components/CardProduct.js";
-import NavbarLogin from "../Components/NavbarLogin.js";
-import Footer from "../Components/Footer.js";
 import CardProfile from "../Components/CardProfile.js";
 import CardDescription from "../Components/CardDescription.js";
 import Comments from "../Components/Comments.js";
@@ -41,12 +39,10 @@ function DetailProduct() {
 
 	return (
 		<div className="DetailProduct">
-			{/* <NavbarLogin /> */}
 			<CardProduct />
 			<CardProfile />
 			<CardDescription />
 			<Comments />
-			{/* <Footer /> */}
 		</div>
 		
 	)

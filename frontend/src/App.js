@@ -9,7 +9,7 @@ import Explore from "./Pages/Explore.js";
 import DetailProduct from "../src/Pages/DetailProduct.js";
 import SearchResult from "./Pages/SearchResult";
 import Login from "./Pages/Login";
-
+import Signup from "./Pages/Signup";
 import Cart from "../src/Pages/Cart.js";
 
 import "../src/Assets/CSS/Cart.css";
@@ -18,11 +18,13 @@ import "../src/Assets/CSS/Explore.css";
 import "../src/Assets/CSS/SearchResult.css";
 
 import { Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar";
 import NavbarLogin from "./Components/NavbarLogin";
 import Footer from "./Components/Footer.js"
 
 function App() {
     const dispatch = useDispatch()
+    // const currentPath = useSelector(state => state.counter.currentPath)
     const currentPath = window.location.pathname
 
     useEffect(() => {
@@ -34,10 +36,17 @@ function App() {
     let navbar
     let footer
 
-    if (currentPath != "/Login" && currentPath != "/Register") {
-      navbar = <NavbarLogin />
+    if (currentPath != "/Login" && currentPath != "/Signup") {
+      navbar = <Navbar />
       footer = <Footer />
     }
+
+    console.log(currentPath)
+
+    // if (currentPath != "/Login" && currentPath != "/Register") {
+    //   navbar = <Navbar />
+    //   footer = <Footer />
+    // }
 
     return (
       <div className="App">
@@ -50,6 +59,7 @@ function App() {
           <Route path="/Explore" element={<Explore />} />
           <Route path="/Result" element={<SearchResult />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/Signup" element={<Signup />} />
         </Routes>
         {footer}
       </div>

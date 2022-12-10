@@ -1,6 +1,5 @@
-// import {Link} from "react-router-dom"
 import axios from 'axios';
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { useNavigate } from 'react-router-dom';
 import logo from "../Assets/Images/eternal-logo.png"
 import bg from "../Assets/Images/bglogin.png"
@@ -26,7 +25,6 @@ const Login = () =>{
                 email: email,
                 password: password
             });
-            // console.log(res)
             navigate.push("/") 
         } catch (error) {
             if (error.response) {
@@ -34,8 +32,6 @@ const Login = () =>{
             }
         }
     }
-
-
 
     return(
       <div className="Login">
@@ -56,7 +52,6 @@ const Login = () =>{
                 </div>
                 <label for="akun">Belum punya akun? </label>
                 <a href="" id="akun" >Login</a>
-                {/* <Link to="/Signup" id="akun">Sign Up</Link> */}
             </div >
           </div>
       </div>
