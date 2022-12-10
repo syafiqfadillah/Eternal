@@ -79,3 +79,7 @@
 .dftr{
   padding-left: 1%;
 }
+
+@media only screen and ( max-width: 567px ) {
+  
+}

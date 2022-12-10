@@ -3,6 +3,11 @@ import NavbarLogin from "../Components/NavbarLogin.js"
 import Footer from "../Components/Footer.js";
 import imgseller from "../Assets/Images/dp-seller.jpg"
 
+import axios from 'axios';
+import { useEffect } from "react";
+import { setById } from '../Redux/counterSlice';
+import { useDispatch } from 'react-redux';
+
 import "../Assets/CSS/Navbar.css"; 
 import "../Assets/CSS/Footer.css";
 import '../Assets/CSS/Toko.css';
@@ -55,6 +60,23 @@ function Toko() {
     },
 
 ]
+
+    useEffect(() => {
+        axios.get(`https://dummyjson.com/products/${id.slice(4, id.length)}`)
+            .then(res => {
+                // re-assign data
+                let data = {}
+
+                data["image"] = res.data["images"][0]
+                data["title"] = res.data["title"]
+                data["price"] = res.data["price"]
+                data["stock"] = res.data["stock"]
+                data["description"] = res.data["description"]
+                
+                dispatch(setById(data))
+            })
+    })
+
     return(
     <div className="bg">
         <div className="toko"> 
@@ -74,7 +96,7 @@ function Toko() {
             <div className="cardprod">
                 {Order.map((card, i) => 
                     <div className="wrap">
-                        <Card key={i} nama={card.nama} harga={card.harga} />
+                        <Card key={i} nama={card.title} harga={card.price} />
                     </div>
                     )}
             </div> 
