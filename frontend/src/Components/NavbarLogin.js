@@ -1,8 +1,6 @@
-import Search from "../Assets/Images/Search.png";
 import Logo from "../Assets/Images/eternal-logo.png";
 import Profile from "../Assets/Images/Profile.png";
 import Cart from "../Assets/Images/Cart.png";
-import Wishlist from "../Assets/Images/Wishlist.png";
 
 import { useNavigate, NavLink } from "react-router-dom";
 

@@ -26,7 +26,7 @@ export const counterSlice = createSlice({
         },
         setRiwayatBeli: (state, action) => {
             state.riwayatBeli = action.payload
-		} 
+		}
 	}
 })
 

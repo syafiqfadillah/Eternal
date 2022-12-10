@@ -1,16 +1,28 @@
-import Search from "../Assets/Images/Search.png";
 import Logo from "../Assets/Images/eternal-logo.png";
 
+import { useNavigate, NavLink } from "react-router-dom";
+
 function Navbar() {
+	function search(e) {
+		localStorage.setItem("keyword", e.target[0].value)
+
+		nav("/Result")
+	}
+
+	let nav = useNavigate()
+
 	return (
 		<div className="Navbar">
 			<div className="Navbar-Layer1">
-				<img className="Navbar-Eternal" src={Logo} />
-				<div className="Navbar-Layer2">
-					<input className="Navbar-Search" type="image" src={Search}/>
-					<button className="Navbar-Login">Login</button>
-					<button className="Navbar-Register">Register</button>
-				</div>
+				<NavLink to="/">{<img className="Navbar-Eternal" src={Logo} />}</NavLink>
+			</div>
+			<div className="Navbar-Layer2">
+				<form className="Search" onSubmit={search}>
+					<input className="SearchBar" placeholder="Search" />
+					<input className="Navbar-Search" type="submit" value="Search" />
+				</form>
+				<button className="Navbar-Login" onClick={() => nav("/Login")}>Login</button>
+				<button className="Navbar-Register" onClick={() => nav("/Signup")}>Register</button>
 			</div>
 		</div>
 	)

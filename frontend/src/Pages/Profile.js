@@ -16,9 +16,7 @@ import ProfileImg from "../assets/img/profile.png"
 import logoutIcon from "../assets/img/power.png"
 
 // COMPONENT
-import CardRiwayatBeli from "./_cardRiwayatBeli"
-import Jual from "./_cardJual"
-import Topup from "./_topup"
+import Topup from "../Components/_topup"
 
 // REDUX
 import { useDispatch, useSelector } from "react-redux"

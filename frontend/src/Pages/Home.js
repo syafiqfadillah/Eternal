@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 
-import NavbarLogin from "../Components/NavbarLogin.js";
 import Label from "../Components/Label.js";
 import SwiperMod from "../Components/SwiperMod.js";
 import Reason from "../Components/Reason.js";
-import Footer from "../Components/Footer.js";
 
 import '../Assets/CSS/Home.css';
 import '../Assets/CSS/Navbar.css';

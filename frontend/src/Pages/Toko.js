@@ -8,53 +8,53 @@ import "../Assets/CSS/Footer.css";
 import '../Assets/CSS/Toko.css';
 
 function Toko() {
-   const Order =[
-    {
-        nama : "Kamelia Jepang (Camellia japonica)",
-        harga : "Rp. 10.000"
-    },
-    {
-        nama : "Gloksinia (Gloxinia speciosa)",
-        harga : "Rp. 10.000.000"    
-    },
-    {
-        nama : "Melati putih (Jasminum sambac)",
-        harga : "Rp. 50.000"    
-    },
-    {
-        nama : "Tanaman",
-        harga : "Rp. 10.000"    
-    },
-    {
-        nama : "Zodia (Evodia suaveolens)",
-        harga : "Rp. 10.000"    
-    },
-    {
-        nama : "Nagasari (Palaquium rostratum)",
-        harga : "Rp. 10.000"    
-    },
-    {
-        nama : "Trembesi (Albizia saman Sin. Samanea saman)",
-        harga : "Rp. 10.000"    
-    },
-    {
-        nama : "Tanaman",
-        harga : "Rp. 10.000"    
-    },
-    {
-        nama : "Cattleya (Cattleya)",
-        harga : "Rp. 10.000"    
-    },
-    {
-        nama : "Tuba (Derris elliptica)",
-        harga : "Rp. 100.000"    
-    },
-    {
-        nama : "Anggrek bulan (Phalaenopsis amabilis).",
-        harga : "Rp. 10.000"    
-    },
+    const Order =[
+        {
+            nama : "Kamelia Jepang (Camellia japonica)",
+            harga : "Rp. 10.000"
+        },
+        {
+            nama : "Gloksinia (Gloxinia speciosa)",
+            harga : "Rp. 10.000.000"    
+        },
+        {
+            nama : "Melati putih (Jasminum sambac)",
+            harga : "Rp. 50.000"    
+        },
+        {
+            nama : "Tanaman",
+            harga : "Rp. 10.000"    
+        },
+        {
+            nama : "Zodia (Evodia suaveolens)",
+            harga : "Rp. 10.000"    
+        },
+        {
+            nama : "Nagasari (Palaquium rostratum)",
+            harga : "Rp. 10.000"    
+        },
+        {
+            nama : "Trembesi (Albizia saman Sin. Samanea saman)",
+            harga : "Rp. 10.000"    
+        },
+        {
+            nama : "Tanaman",
+            harga : "Rp. 10.000"    
+        },
+        {
+            nama : "Cattleya (Cattleya)",
+            harga : "Rp. 10.000"    
+        },
+        {
+            nama : "Tuba (Derris elliptica)",
+            harga : "Rp. 100.000"    
+        },
+        {
+            nama : "Anggrek bulan (Phalaenopsis amabilis).",
+            harga : "Rp. 10.000"    
+        },
 
-]
+    ]
     return(
     <div className="bg">
         <div className="toko"> 

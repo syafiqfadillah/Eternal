@@ -1,8 +1,6 @@
 import { useSelector } from 'react-redux';
 
-import NavbarLogin from "../Components/NavbarLogin.js";
 import Card from "../Components/Card.js";
-import Footer from '../Components/Footer.js';
 
 import "../Assets/CSS/NavbarLogin.css";
 

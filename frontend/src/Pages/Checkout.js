@@ -1,7 +1,5 @@
-import NavbarLogin from "../Components/NavbarLogin.js";
 import AddressCard from "../Components/AddressCard.js";
 import CalculationCard from "../Components/CalculationCard.js";
-import Footer from "../Components/Footer.js";
 
 import "../Assets/CSS/NavbarLogin.css";
 import "../Assets/CSS/CalculationCard.css";
