@@ -1,5 +1,4 @@
-import { useSelector, useDispatch } from 'react-redux';
-import { setCardData, setIndex } from '../Redux/counterSlice';
+import { useSelector } from 'react-redux';
 
 function CardDescription() {
 	const byId = useSelector(state => state.counter.byId)

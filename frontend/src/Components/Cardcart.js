@@ -1,5 +1,5 @@
 import imgcart from "../Assets/Images/Plant-Card0.png";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import hapus from "../Assets/Images/trash-bin.png";
 
 const Card = (props) => {
@@ -30,7 +30,7 @@ const Card = (props) => {
 			</td>
 			<td className="desctotal">
 				<a href=""><img src={hapus} className="imghapus" /></a>
-        	    <button onClick={kurang} className="btncart" >-</button> <span> {nilai} </span> <button onClick={tambah} className="btncart">+</button>
+				<button onClick={kurang} className="btncart" >-</button> <span> {nilai} </span> <button onClick={tambah} className="btncart">+</button>
 			</td>
 			<td>${props.subtotal * nilai}</td>
 		</tr>

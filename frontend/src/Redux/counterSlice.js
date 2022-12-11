@@ -5,7 +5,8 @@ const initialState = {
 	profile: [],
 	riwayatBeli: [],
 	cardData: [],
-	index: 0
+	index: 0,
+	currentPath: ""
 }
 
 export const counterSlice = createSlice({
@@ -26,10 +27,13 @@ export const counterSlice = createSlice({
         },
         setRiwayatBeli: (state, action) => {
             state.riwayatBeli = action.payload
+		},
+		setCurrentPath: (state, action) => {
+			state.currentPath = action.payload
 		}
 	}
 })
 
-export const { setCardData, setIndex, setById } = counterSlice.actions
+export const { setCardData, setIndex, setById, setCurrentPath } = counterSlice.actions
 
 export default counterSlice.reducer

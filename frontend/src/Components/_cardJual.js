@@ -1,7 +1,5 @@
 import {
   Box,
-  Button,
-  useDisclosure,
   Text,
   Image,
   Stack,
@@ -12,8 +10,6 @@ import PostForm from "./assets/postForm"
 import Tanaman1 from "../assets/img/tanaman1.jpg"
 
 const Jual = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure()
-
   return (
     <>
       <PostForm />

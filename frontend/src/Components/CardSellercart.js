@@ -1,5 +1,3 @@
-import dptoko from "../Assets/Images/dp-seller.jpg"
-
 const CardSeller= (props) => {
 	return (
 		<div className="Cardtoko">

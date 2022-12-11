@@ -1,36 +1,30 @@
-
 .Login{
-  /* width: 100%;
-  height: 100vh;
-  color: #4d9f3d; */
-  /* display: flex; */
-  /* flex: wrap; */
-  /* justify-content: center; */
   color: white;
 }
+
 .bglogin{
   width: 40%;
   height: 100vh;
   float: left;
 }
+
 .apa {
   left: 0px;
   bottom: 0px;
   top: 0px;
   right: 0px;
   width: 40%;
-  /* background-color: black; */
   box-shadow: 0px -83px 147px 50px rgba(12,75,46,0.75) inset;
--webkit-box-shadow: 0px -83px 147px 50px rgba(12,75,46,0.75) inset;
--moz-box-shadow: 0px -83px 147px 50px rgba(12,75,46,0.75) inset;
   position: absolute;
 }
+
 .colomn2{
   background-color: #0c4b2e;
   width: 60%;
   height: 100vh;
   float: right;
 }
+
 .logonama{
   display: flex;
   flex-direction: row;
@@ -38,19 +32,21 @@
   padding-top: 4%;
 
 }
+
 .iimg{
   width: 30vw;
 }
+
 .isi1 input, .isi1 button{
   width: 75%;
   height: 35px;
   border-radius: 5px;
   border: 0; 
 }
+
 .isi1{
   margin: auto;
   width: 50%;
-  /* height: 40%; */
   line-height: 8vh;
   border-radius: 8px;
   background-color: #65a75877;
@@ -58,9 +54,11 @@
   text-align: center;
   padding: 10px;
 }
+
 .isi1 h1{
   color: white;
 }
+
 .btnlogin{
   width: 70%;
   height: 30px;
@@ -70,14 +68,20 @@
   color: white;
   font-weight: 150;
 }
+
 .btnlogin:hover {
   background-color: white;
   color: #4E9F3D;
   border: 3px solid #4E9F3D;
   transition: 0.3s;
 }
+
 .dftr{
   padding-left: 1%;
+}
+
+#akun {
+  width: 12%;
 }
 
 @media only screen and ( max-width: 900px ) {

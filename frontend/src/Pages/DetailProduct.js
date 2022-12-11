@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useEffect } from "react";
-import { setById } from '../Redux/counterSlice';
+import { setById, setCurrentPath } from '../Redux/counterSlice';
 import { useDispatch } from 'react-redux';
 
 import CardProduct from "../Components/CardProduct.js";
@@ -15,9 +15,13 @@ import "../Assets/CSS/Footer.css";
 import "../Assets/CSS/CardProfile.css";
 import "../Assets/CSS/CardDescription.css";
 import "../Assets/CSS/Comments.css";
+import { useLocation } from 'react-router-dom';
 
 function DetailProduct() {
 	const dispatch = useDispatch()
+	const location = useLocation()
+
+	dispatch(setCurrentPath(location))
 
     const id = window.location.search
 

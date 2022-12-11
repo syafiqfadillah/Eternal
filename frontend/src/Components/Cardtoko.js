@@ -1,7 +1,7 @@
+import { useSelector } from "react-redux";
 import imgtoko from "../Assets/Images/Plant-Card0.png";
 
-
-const Card= (props) => {
+const Card = (props) => {
 	const byId = useSelector(state => state.counter.byId)
 
 	return (

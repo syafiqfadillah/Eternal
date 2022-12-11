@@ -1,8 +1,10 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Card({props}) {
+	const nav = useNavigate()
+
 	return (
-		<Link to={`/Product/?id=${props.id}`}>
+		<button onClick={() => nav(`/Product/?id=${props.id}`, { state: "/Product" })}>
 			<div className="Card">
 				<div className="Test">
 					<img className="Card-Image" src={props.images[0]} alt="product"/>
@@ -12,7 +14,7 @@ function Card({props}) {
 					<p>${props.price}</p>
 				</div>
 			</div>
-		</Link>
+		</button>
 	)
 }
 

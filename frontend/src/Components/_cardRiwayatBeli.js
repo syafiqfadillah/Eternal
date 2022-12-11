@@ -3,9 +3,6 @@ import React from "react"
 import Tanaman1 from "../assets/img/tanaman1.jpg"
 import "../assets/css/riwayat_beli.css"
 
-// REDUX
-import { useSelector } from "react-redux"
-
 const CardRiwayatBeli = ({ props }) => {
   const [isLoaded, setIsLoaded] = React.useState(false)
   const convertRupiah = () => {
