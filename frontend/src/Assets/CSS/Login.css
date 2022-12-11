@@ -13,7 +13,18 @@
   height: 100vh;
   float: left;
 }
-
+.apa {
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  right: 0px;
+  width: 40%;
+  /* background-color: black; */
+  box-shadow: 0px -83px 147px 50px rgba(12,75,46,0.75) inset;
+-webkit-box-shadow: 0px -83px 147px 50px rgba(12,75,46,0.75) inset;
+-moz-box-shadow: 0px -83px 147px 50px rgba(12,75,46,0.75) inset;
+  position: absolute;
+}
 .colomn2{
   background-color: #0c4b2e;
   width: 60%;
@@ -86,7 +97,7 @@
       bottom: 0px;
       top: 0px;
       right: 0px;
-      width: 40%;
+      width: 0%;
       /* background-color: black; */
       box-shadow: 0px inset;
     -webkit-box-shadow: 0px inset;
