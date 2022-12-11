@@ -1,6 +1,5 @@
 import imgtoko from "../Assets/Images/Plant-Card0.png";
 
-
 const Card= (props) => {
 	return (
 		<div className="Cardtoko">

@@ -1,6 +1,4 @@
 import Card from "../Components/Cardtoko.js"
-import NavbarLogin from "../Components/NavbarLogin.js"
-import Footer from "../Components/Footer.js";
 import imgseller from "../Assets/Images/dp-seller.jpg"
 
 import "../Assets/CSS/Navbar.css"; 

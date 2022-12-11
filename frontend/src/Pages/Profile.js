@@ -61,7 +61,6 @@ const Profile = () => {
     )
   }
 
-  console.log(riwayatBeli)
   return (
     <div className="container-profile">
       <div className="profile-div">
@@ -185,14 +184,6 @@ const Profile = () => {
           <Box className="judul" fontSize={["sm", "md", "lg", "xl"]}>
             {navname}
           </Box>
-          {/* <Box className="riwayat-beli hide">
-            {riwayatBeli.map((e, i) => (
-              <CardRiwayatBeli key={i} props={e} />
-            ))}
-          </Box>
-          <Box className="jual hide">
-            <Jual />
-          </Box> */}
           <Box className="topup">
             <Topup />
           </Box>

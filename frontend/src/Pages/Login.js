@@ -1,25 +1,28 @@
 import axios from 'axios';
 import { useState } from "react"
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import logo from "../Assets/Images/eternal-logo.png"
 import bg from "../Assets/Images/bglogin.png"
 
 import "../Assets/CSS/Login.css";
 
 import "../Assets/CSS/Login.css"
-
-// REDUX
-// import { useDispatch, useSelector } from "react-redux"
-// import { setProfile, set } from "../Redux/counterSlice"
+import { useDispatch } from 'react-redux';
+import { setCurrentPath } from '../Redux/counterSlice';
 
 const Login = () =>{
-  const [email, setEmail] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [msg, setMsg] = useState('');
     const navigate = useNavigate();
- 
+    const location = useLocation()
+    const dispatch = useDispatch()
+
+    dispatch(setCurrentPath(location.state))
+
     const Login = async (e) => {
         e.preventDefault();
+
         try {
             await axios.post('http://localhost:7789/login', {
                 email: email,
@@ -41,17 +44,19 @@ const Login = () =>{
           </div>
           <div className="colomn2">  
               <div className="logonama">
-                  <img className="iimg" src={logo}/>
+                  <button onClick={() => navigate("/", {state: "/"})}><img className="iimg" src={logo} ></img></button>
               </div>
             <div className="isi1">
                 <h1>Welcome</h1>
                 <div className='login-form'>
                   <input type='text' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} ></input>
                   <input type='password' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} ></input>
-                  <button className='login-btn' type='button' onClick={Login}>Login</button>
+                  <button className='btnlogin' type='button' onClick={Login}>Login</button>
                 </div>
-                <label for="akun">Belum punya akun? </label>
-                <a href="" id="akun" >Login</a>
+                <span>
+                  <label for="akun">Belum punya akun? </label>
+                  <button id="akun" onClick={() => navigate("/Signup", {state: "/Signup"})}>Signup</button>
+                </span>
             </div >
           </div>
       </div>

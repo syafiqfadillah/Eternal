@@ -1,6 +1,6 @@
 import Logo from "../Assets/Images/eternal-logo.png";
 
-import { useNavigate, NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
 	function search(e) {
@@ -14,15 +14,15 @@ function Navbar() {
 	return (
 		<div className="Navbar">
 			<div className="Navbar-Layer1">
-				<NavLink to="/">{<img className="Navbar-Eternal" src={Logo} />}</NavLink>
+				<button onClick={() => nav("/", { state: "/" })}>{<img className="Navbar-Eternal" src={Logo} />}</button>
 			</div>
 			<div className="Navbar-Layer2">
 				<form className="Search" onSubmit={search}>
 					<input className="SearchBar" placeholder="Search" />
 					<input className="Navbar-Search" type="submit" value="Search" />
 				</form>
-				<button className="Navbar-Login" onClick={() => nav("/Login")}>Login</button>
-				<button className="Navbar-Register" onClick={() => nav("/Signup")}>Register</button>
+				<button className="Navbar-Login" onClick={() => nav("/Login", { state: "/Login" })}>Login</button>
+				<button className="Navbar-Register" onClick={() => nav("/Signup", { state: "/Signup" })}>Register</button>
 			</div>
 		</div>
 	)

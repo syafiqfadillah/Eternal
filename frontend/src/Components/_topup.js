@@ -1,6 +1,5 @@
 import {
   Text,
-  Input,
   Box,
   Button,
   Grid,
@@ -13,7 +12,7 @@ import {
   AlertDialogOverlay,
   AlertDialogCloseButton,
 } from "@chakra-ui/react"
-import React, { useState } from "react"
+import React from "react"
 import { useDisclosure } from "@chakra-ui/react"
 import "../assets/css/topup.css"
 
@@ -21,7 +20,6 @@ const Topup = () => {
   const [value, setValue] = React.useState("")
   const { isOpen, onOpen, onClose } = useDisclosure()
   const cancelRef = React.useRef()
-  const handleChange = (event) => setValue(event.target.value)
 
   function convertRupiah(num) {
     const format = num
@@ -35,14 +33,6 @@ const Topup = () => {
   return (
     <Box className="topup-div">
       <Text mb="8px">Topup: {value ? convertRupiah(value) : value}</Text>
-      {/* <Input
-        variant="flushed"
-        value={value}
-        onChange={handleChange} // 
-        placeholder="Here is a sample placeholder"
-        size="sm"
-      /> */}
-
       <Grid w="100%" templateColumns="repeat(2, 1fr)" gap={6}>
         <GridItem w="100%" h="10" bg="transparant">
           {" "}

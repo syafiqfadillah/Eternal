@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import Profile from "../Assets/Images/Profile.png";
-import Chat from "../Assets/Images/Chat.png";
 import Shop from "../Assets/Images/Shop.png";
 
 function CardProfile() {
+	const nav = useNavigate()
+
 	return (
 		<div className="CardProfile">
 			<div className="CardProfile-Layer1">
@@ -16,7 +17,7 @@ function CardProfile() {
 						<h2>Admin</h2>
 					</div>
 					<div className="CardProfile-Buttons">
-						<Link className="Kunjungi-Toko" to="/Store"><img src={Shop} /> Kunjungi Toko</Link>
+						<button className="Kunjungi-Toko" onClick={() => nav("/Store", { state: "/Store" })}><img src={Shop} /> Kunjungi Toko</button>
 					</div>
 				</div>	
 			</div>
