@@ -15,11 +15,11 @@ root.render(
     <React.StrictMode>
       <Router>
         {/* <App /> */}
-        {/*<Toko/>*/}
+        <Toko/>
         {/*<Cart/>*/}
         {/*<DetailProduct />*/}
         {/*<Checkout />*/}
-        <Login />
+        {/* <Login /> */}
         {/* <Signup /> */}
         <ScrollToTop />
         <App /> 
