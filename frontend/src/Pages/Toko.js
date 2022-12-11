@@ -51,8 +51,7 @@ function Toko() {
             nama : "Anggrek bulan (Phalaenopsis amabilis).",
             harga : "Rp. 10.000"    
         },
-
-    ]
+]
     return(
     <div className="bg">
         <div className="toko"> 
@@ -62,7 +61,7 @@ function Toko() {
                     <div className="bioseller">
                         <h1 className="namaseller">Thyme Out</h1>
                         <p className="lokasi">Jakarta, Indonesia</p>
-                        <button className="chat">Chat</button>
+                        {/* <button className="chat">Chat</button> */}
                     </div>
                 </div>
                 <div className="totalprod">
@@ -72,7 +71,7 @@ function Toko() {
             <div className="cardprod">
                 {Order.map((card, i) => 
                     <div className="wrap">
-                        <Card key={i} nama={card.nama} harga={card.harga} />
+                        <Card key={i} nama={card.title} harga={card.price} />
                     </div>
                     )}
             </div> 

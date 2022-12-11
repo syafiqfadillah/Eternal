@@ -14,6 +14,13 @@ root.render(
   <Provider store={store}>
     <React.StrictMode>
       <Router>
+        {/* <App /> */}
+        <Toko/>
+        {/*<Cart/>*/}
+        {/*<DetailProduct />*/}
+        {/*<Checkout />*/}
+        {/* <Login /> */}
+        {/* <Signup /> */}
         <ScrollToTop />
         <App /> 
       </Router>
