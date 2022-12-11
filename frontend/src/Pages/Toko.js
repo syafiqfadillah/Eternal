@@ -86,7 +86,7 @@ function Toko() {
                     <div className="bioseller">
                         <h1 className="namaseller">Thyme Out</h1>
                         <p className="lokasi">Jakarta, Indonesia</p>
-                        <button className="chat">Chat</button>
+                        {/* <button className="chat">Chat</button> */}
                     </div>
                 </div>
                 <div className="totalprod">
