@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "dev": "nodemon --es-module-specifier-resolution=node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/index"
+    "start": "nodemon --experimental-modules --es-module-specifier-resolution=node index.js"
   },
   "author": "risa nussy",
   "license": "ISC",

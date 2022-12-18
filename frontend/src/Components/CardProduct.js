@@ -1,10 +1,28 @@
 import Wishlist from '../Assets/Images/Wishlist.png';
 import Cart from '../Assets/Images/Cart.png';
 
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { useState } from 'react';
+import { setCart } from '../Redux/counterSlice';
 
 function CardProduct() {
+	const dispatch = useDispatch()
+	const [sum, setSum] = useState(1)
 	const byId = useSelector(state => state.counter.byId)
+
+	function add() {
+		if (sum < byId.stock) {
+			setSum(sum + 1)
+		}
+	}
+
+	function less() {
+		if (sum > 1) {
+			setSum(sum - 1)
+		}
+	}
+
+	console.log(window.screen.availWidth)
 
 	return (
 		<div className="CardProduct">
@@ -23,15 +41,15 @@ function CardProduct() {
 					<h1>${byId.price}</h1>
 				</div>
 				<div className="CardProduct-Kuantitas">
-					<p>Kuantitas</p>
-					<button>-</button>
-					<p>1</p>
-					<button>+</button>
-					<p>Tersisa {byId.stock} Buah</p>
+					<p className="Kuantitas">Kuantitas</p>
+					<button onClick={less}>-</button>
+					<p>{sum}</p>
+					<button onClick={add}>+</button>
+					<p className="Amount">Tersisa {byId.stock} Buah</p>
 				</div>
 				<div className="CardProduct-Buttons">
-					<button className="Cart-Shortcut"><img src={Cart} alt="cart" />Masukan Ke Keranjang</button>
-					<button className="Buy-Shortcut">Beli Sekarang</button>
+					<button className="Cart-Shortcut" onClick={() => dispatch(setCart(byId))}><img src={Cart} alt="cart" /></button>
+					<button className="Buy-Shortcut">Beli</button>
 				</div>
 			</div>
 		</div>

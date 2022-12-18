@@ -5,9 +5,12 @@ import db from "../config/db_config.js"
 const { DataTypes } = Sequelize
 
 // Define schema
-const Wishlist = db.define(
-    "wishlist",
+const HistoryBuy = db.define(
+    "history-buy",
     {
+        quantity: {
+            type: DataTypes.INTEGER,
+        },
         user_id: {
             type: DataTypes.INTEGER,
         },
@@ -19,4 +22,4 @@ const Wishlist = db.define(
 )
 
 // Export model
-export default Wishlist
+export default HistoryBuy

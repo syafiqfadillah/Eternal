@@ -21,7 +21,7 @@ function NavbarLogin() {
 			<div className="Navbar-Layer2">
 				<form className="Search" onSubmit={search}>
 					<input className="SearchBar" placeholder="Search" />
-					<input className="Navbar-Search" type="submit" value="Search" />
+					<input className="Navbar-Search" type="submit" value="Find" />
 				</form>
 				<button onClick={() => nav("/Cart", { state: "/Cart" })}>{<input className="Navbar-Cart" type="image" src={Cart} />}</button>
 				<input className="Navbar-Profile" type="image" src={Profile} />
