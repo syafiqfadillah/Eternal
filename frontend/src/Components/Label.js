@@ -4,7 +4,7 @@ import PlantLabel from '../Assets/Images/Plant-Label.png';
 function Label() {
 	return (
 		<div className="Label">
-			<img src={Logo} />
+			<img className="LogoLabel" src={Logo} />
 			<img className="PlantLabel" src={PlantLabel} />
 			<h2>
 				Set the scene and welcome loved <br /> ones with thoughtful touches of greenery. <br />

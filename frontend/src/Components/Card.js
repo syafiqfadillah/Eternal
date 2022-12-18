@@ -4,7 +4,7 @@ function Card({props}) {
 	const nav = useNavigate()
 
 	return (
-		<button onClick={() => nav(`/Product/?id=${props.id}`, { state: "/Product" })}>
+		<button className="CardButton" onClick={() => nav(`/Product/?id=${props.id}`, { state: "/Product" })}>
 			<div className="Card">
 				<div className="Test">
 					<img className="Card-Image" src={props.images[0]} alt="product"/>

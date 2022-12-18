@@ -1,8 +1,8 @@
-import { Wishlist, Products } from "../models/index"
+import { HistoryBuy, Products } from "../models"
 
-export const getWishlist = async (req, res) => {
+export const getHistoryBuy = async (req, res) => {
     try {
-        const get = await Wishlist.findAll({
+        const get = await HistoryBuy.findAll({
         where: {
             user_id: req.body.user_id,
         },
@@ -18,16 +18,17 @@ export const getWishlist = async (req, res) => {
     }
 }
 
-export const postWishlist = async (req, res) => {
+export const buyProduct = async (req, res) => {
     try {
-        const post = await Wishlist.create({
+        const postBuy = await HistoryBuy.create({
+        quantity: req.body.quantity,
         user_id: req.body.user_id,
         link_id: req.body.link_id,
         })
-        if (post) {
+        if (postBuy) {
         res.json({
-            message: "berhasil post wishlist",
-            data: post,
+            message: "barang berhasil di beli yey",
+            data: postBuy,
         })
         }
     } catch (err) {

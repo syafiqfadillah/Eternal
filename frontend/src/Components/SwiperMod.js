@@ -13,9 +13,9 @@ function SwiperMod() {
 
 	return (
 		<Swiper
-			slidesPerView={4}
+			slidesPerView={2}
 			spaceBetween={1}
-			slidesPerGroup={4}
+			slidesPerGroup={2}
 			loop={true}
 			loopFillGroupWithBlank={true}
 			pagination={{

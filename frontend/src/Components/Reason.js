@@ -7,7 +7,7 @@ function Reason() {
 				<div className="Reason-Contents">
 					<h1>We Provide Excellent <br /> Services For You</h1>
 					<p>
-						Set the scene and welcome loved <br /> ones with thoughtful touches of greenery. <br />
+						Set the scene and welcome loved ones with thoughtful <br/> touches of greenery.
 						Enjoy online delivery on your order.
 					</p>
 					<ul className="Reason-Points">

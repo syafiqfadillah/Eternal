@@ -11,6 +11,7 @@ import SearchResult from "./Pages/SearchResult";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import Cart from "../src/Pages/Cart.js";
+import Checkout from "./Pages/Checkout";
 
 import "../src/Assets/CSS/Cart.css";
 import "../src/Assets/CSS/NavbarLogin.css";
@@ -25,6 +26,7 @@ import Footer from "./Components/Footer.js"
 function App() {
     const dispatch = useDispatch()
     const currentPath = useSelector(state => state.counter.currentPath)
+    const cart = useSelector(state => state.counter.cart)
 
     useEffect(() => {
       axios.get('https://dummyjson.com/products')

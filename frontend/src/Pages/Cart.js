@@ -6,9 +6,10 @@ import CardSeller from "../Components/CardSellercart.js"
 import "../Assets/CSS/NavbarLogin.css"; 
 import "../Assets/CSS/Footer.css";
 import '../Assets/CSS/Cart.css';
+import { useSelector } from "react-redux";
 
 const Cart = () =>{
-    const Order = [
+    const order = [
         {
             namaproduk: "Tuba (Derris elliptica)",
             price: 100000,
@@ -32,7 +33,7 @@ const Cart = () =>{
 
     let total = 0
 
-    Order.forEach((item, i) => {
+    order.forEach((item, i) => {
       total += item.price
     })
 
@@ -42,7 +43,7 @@ const Cart = () =>{
             <div className="toko1">
               <div className="namaseller">
                 {seller.map((card,i) =>(
-                  <CardSeller key={i} namaseller={card.namaseller} />
+                  <CardSeller key={i} namaseller={"admin"} />
                 ))}
               </div>
             <table id="tb" className="tabel-none">
@@ -51,14 +52,14 @@ const Cart = () =>{
                 <th className="tablequantity">Quantity</th>
                 <th className="tablesubtotal">Subtotal</th>
               </tr>
-              {Order.map((card, i) => (
-                  <Card key={i} namaproduk={card.namaproduk} price={card.price} subtotal={card.subtotal} />
+              {order.map((card, i) => (
+                  <Card key={i} namaproduk={card.title} price={card.price} subtotal={card.subtotal} />
               ))}    
             </table>
           </div>
           <div className="beli">
                 <h4>Ringkasan Belanja</h4>
-                <p>Jumlah : {Object.keys(Order).length} Barang</p>
+                <p>Jumlah : {Object.keys(order).length} Barang</p>
                 <p>Total harga : ${total}</p>
                 <button className="cartco">Check Out</button>
           </div>

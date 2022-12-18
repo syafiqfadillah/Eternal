@@ -1,18 +1,51 @@
-.Label {
-	height: 20vh;
-	background-color: #386641;
-	transform: translateY(-4px);
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
+@media only screen and (min-width: 1117px) {
+	.Label {
+		height: 20vh;
+		background-color: #386641;
+		transform: translateY(-4px);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	
+	.Label h2 {
+		color: #A7C957;
+	}
+	
+	.PlantLabel {
+		width: 20%;
+		align-self: flex-end;
+	}
 }
 
-.Label h2 {
-	color: #A7C957;
-}
+@media only screen and (max-width: 567px) {
+	.Label {
+		height: 16vh;
+		background-color: #386641;
+		transform: translateY(-4px);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+	
+	.LogoLabel {
+		width: 15%;
+		align-self: center;
+	}
 
-.PlantLabel {
-	width: 20%;
-	align-self: flex-end;
+	.Label h2 {
+		font-size: 1em;
+		color: #A7C957;
+		width: 70%;
+	}
+
+	.Label h2 br {
+		display: none;
+	}
+	
+	.PlantLabel {
+		display: none;
+	}
 }

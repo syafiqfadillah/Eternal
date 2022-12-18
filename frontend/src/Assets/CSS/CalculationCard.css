@@ -1,60 +1,133 @@
-.CalculationCard {
-	width: 80vw;
-	display: flex;
-	flex-direction: column;
-	margin: auto;
-	margin-top: 3%;
-	background-color: white;
-	border-radius: 10px;
-	padding: 2% 2% 1% 2%;
+@media only screen and (min-width: 1117px) {
+	.CalculationCard {
+		width: 80vw;
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		margin-top: 3%;
+		background-color: white;
+		border-radius: 10px;
+		padding: 2% 2% 1% 2%;
+	}
+	
+	.Total {
+		width: 100%;
+		display: flex;
+	/*	flex-direction: column;*/
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	.Total button {
+		width: 16%;
+		height: 6vh;
+		background-color: #386641;
+		color: #A7C957;
+		border: 0;
+	}
+	
+	.Product {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+	}
+	
+	.Product img {
+		margin-right: 3%;
+	}
+	
+	th {
+		background-color: #386641;
+		color: #A7C957;
+		border: 0;
+	}
+	
+	td {
+		border: 2px solid #386641;
+		color: #386641;
+	}
+	
+	td, th {
+		padding: 1%;
+		width: 10%;
+		text-align: center;
+		flex-wrap: wrap;
+	}
+	
+	.CalcImage {
+		width: 15%;
+	}
 }
 
-.Total {
-	width: 100%;
-	display: flex;
-/*	flex-direction: column;*/
-	justify-content: space-between;
-	align-items: center;
-}
+@media only screen and (max-width: 567px) {
+	.CalculationCard {
+		width: 90vw;
+		height: 35%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: auto;
+		margin-top: 3%;
+		background-color: white;
+		border-radius: 10px;
+		padding: 2% 2% 1% 2%;
+	}
+	
+	.Total {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	.Total button {
+		width: 40%;
+		height: 3.5vh;
+		background-color: #386641;
+		color: #A7C957;
+		border: 0;
+		font-size: 0.7em;
+	}
 
-.Total button {
-	width: 16%;
-	height: 6vh;
-	background-color: #386641;
-	color: #A7C957;
-	border: 0;
-}
-
-.Product {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-}
-
-.Product img {
-	margin-right: 3%;
-}
-
-th {
-	background-color: #386641;
-	color: #A7C957;
-	border: 0;
-}
-
-td {
-	border: 2px solid #386641;
-	color: #386641;
-}
-
-td, th {
-	padding: 1%;
-	width: 10%;
-	text-align: center;
-	flex-wrap: wrap;
-}
-
-.CalcImage {
-	width: 15%;
+	.Total h2 {
+		font-size: 90%;
+	}
+	
+	.Product {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+	}
+	
+	.Product img {
+		margin-right: 3%;
+	}
+	
+	th {
+		font-size: 0.6em;
+		background-color: #386641;
+		color: #A7C957;
+		border: 0;
+	}
+	
+	td {
+		font-size: 0.6em;
+		border: 2px solid #386641;
+		color: #386641;
+	}
+	
+	td, th {
+		padding: 1%;
+		width: 10%;
+		text-align: center;
+	}
+	
+	.CalcImage {
+		width: 15%;
+	}
 }

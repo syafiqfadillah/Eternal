@@ -1,15 +1,25 @@
-.Explore {
-    display: flex;
-    flex-direction: column;
+@media only screen and (min-width: 1117px) {    
+    .Explore-Layer1 {
+        padding-left: 5%;
+    }
+    
+    .Products {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
-.Explore-Layer1 {
-    padding-left: 5%;
-}
-
-.Products {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
+@media only screen and (max-width: 567px) {
+    .Explore-Layer1 {
+        padding-left: 5%;
+    }
+    
+    .Products {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }

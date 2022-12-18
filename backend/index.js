@@ -1,56 +1,64 @@
-import express from "express";
-import dotenv from "dotenv";
-import multer from "multer";
-import cookieParser from "cookie-parser";
-import cors from "cors";
-import db from "./src/config/db_config.js";
-import router from "./src/routes/login.js";
-import bodyParser from "body-parser";
-import routerProfile from "./src/routes/Profile.js"
-import routerJual from "./src/routes/Jual.js"
-import routerBeli from "./src/routes/Beli.js"
-import routerWishlist from "./src/routes/Wishlist.js"
-import Profile from "./src/models/Profile.js"
-import Jual from "./src/models/Jual.js"
-import Beli from "./src/models/Beli.js"
-import Wishlist from "./src/models/Wishlist.js"
-dotenv.config();
+import cors from "cors"
+import db from "./src/config/db_config.js"
+import bodyParser from "body-parser"
+import express from "express"
+import cookieParser from "cookie-parser"
+import dotenv from "dotenv"
 
+// import { fileURLToPath } from "url"
+import path from "path"
 
+//routes
+dotenv.config()
 const app = express()
-const port = 5300
 
-app.use(cors({ credentials:true, origin:'http://localhost:3000' }));
-app.use(cookieParser());
+// import profileRoutes from "./src/routes/user"
+import user from "./src/routes/user"
+import product from "./src/routes/product"
+import wishlist from "./src/routes/wishlist"
+import historybuy from "./src/routes/historybuy"
+import historysell from "./src/routes/historysell"
+import cart from "./src/routes/cart"
+// import routes from "./src/routes/index.js"
+
+//routes
+app.use(bodyParser.json()) // untuk memparser json body
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(cookieParser())
+app.use(express.json())
 app.use(cors())
-app.use(multer().single("none"))
-app.use(bodyParser.json())
 
-// router
-// const { jualProduct } = require("./routes")
+app.use(product)
+app.use(user)
+app.use(wishlist)
+app.use(historybuy)
+app.use(historysell)
+app.use(cart)
 
+db.sync({ alter: true })
+    .then(() => {})
+    .catch((err) => console.log(err))
 
-try {
-    await db.authenticate();
-    console.log("Database connected!");
-    // await Users.sync(); // apabila blm ada table user, akan  sync otomatis
-} catch (error) {
-    console.error(error);
-}
+const port = 3333
 
+app.use("/images", express.static(path.join("./images")))
 
-// app.use("/riwayatbeli/v1", riwayatBeli)
-Profile.sync().then()
-Jual.sync().then()
-Beli.sync().then()
-Wishlist.sync().then()
+// const cekFileFilter = (req, file, cb) => {
+//   if (
+//     file.mimetype === "image/png" ||
+//     file.mimetype === "image/jpg" ||
+//     file.mimetype === "image/jpeg"
+//   ) {
+//     cb(null, true)
+//   } else {
+//     cb(null, false)
+//   }
+// }
 
-app.use(routerProfile)
-app.use(routerJual)
-app.use(routerBeli)
-app.use(routerWishlist)
+// app.use("/images", express.static(path.join(__dirname, "../images")))
 
-app.use(express.json());
-app.use(router);
-
-app.listen(port, console.log(`Server running on http://localhost:${port}`))
+db.authenticate().then(() => {
+    app.listen(port, () =>
+        console.log(`server running at http://localhost:${port}`)
+    )
+})

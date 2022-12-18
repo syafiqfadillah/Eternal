@@ -5,8 +5,12 @@ const initialState = {
 	profile: [],
 	riwayatBeli: [],
 	cardData: [],
-	index: 0,
-	currentPath: ""
+	currentPath: "",
+	user: [],
+	product: [],
+	riwayatJual: [],
+	wishlist: [],
+	page: 1,
 }
 
 export const counterSlice = createSlice({
@@ -19,9 +23,6 @@ export const counterSlice = createSlice({
 		setCardData: (state, action) => {
 			state.cardData = action.payload
 		},
-		setIndex: (state, action) => {
-			state.index = action.payload
-		},
 		setProfile: (state, action) => {
             state.profile = action.payload
         },
@@ -30,10 +31,44 @@ export const counterSlice = createSlice({
 		},
 		setCurrentPath: (state, action) => {
 			state.currentPath = action.payload
-		}
+		},
+		setUser: (state, action) => {
+			state.user = action.payload
+		},
+		setSaldo: (state, action) => {
+			state.saldo = action.payload
+		},
+		setWishlist: (state, action) => {
+			state.wishlist = action.payload
+		},
+		setProduct: (state, action) => {
+			state.product = action.payload
+		},
+		increment: (state, action) => {
+			state.page += 1
+		},
+		decrement: (state, action) => {
+			state.page -= 1
+		},
+		reset: (state, action) => {
+			state.page = 1
+		},
 	}
 })
 
-export const { setCardData, setIndex, setById, setCurrentPath } = counterSlice.actions
+export const { 
+	setCardData, 
+	setById, 
+	setCurrentPath, 
+	setCart,
+	setUser,
+	setRiwayatBeli,
+	setSaldo,
+	setProduct,
+	increment,
+	decrement,
+	setWishlist,
+	setReset, 
+} = counterSlice.actions
 
 export default counterSlice.reducer

@@ -14,7 +14,7 @@ function SearchResult() {
         let newResult = []
 
         for (let index = 0; index < data.length; index++) {
-            if (data[index].title == search) {
+            if (data[index].title.toUpperCase().includes(search.toUpperCase())) {
                 newResult.push(data[index])
             }
         }

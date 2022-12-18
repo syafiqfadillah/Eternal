@@ -1,8 +1,9 @@
 import express from "express"
-
 const router = express.Router()
 
-import { getWishlist } from "../controllers/Wishlist.js"
-router.get("/wishlist", getWishlist)
+import { getWishlist, postWishlist } from "../controllers/wishlist"
+
+router.post("/getwishlist", getWishlist)
+router.post("/postwishlist", postWishlist)
 
 export default router
